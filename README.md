@@ -1,2 +1,2 @@
-# michael-baer-dc.github.io
-My portfolio website
+# mbbaer.github.io
+My portfolio website.
