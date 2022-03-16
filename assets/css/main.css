@@ -2320,7 +2320,7 @@ input, select, textarea {
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			border-color: #3d0019;
+			border-color: #330518;
 		}
 
 	input[type="checkbox"] + label:before {
@@ -2745,7 +2745,7 @@ input, select, textarea {
 				}
 
 				ul.pagination li > .page.active {
-					background-color: #3d0019;
+					background-color: #330518;
 				}
 
 			ul.pagination li:first-child {
@@ -2913,7 +2913,7 @@ input, select, textarea {
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
-			background-color: #3d0019;
+			background-color: #330518;
 			box-shadow: none;
 		}
 
@@ -3281,7 +3281,7 @@ input, select, textarea {
 			-ms-transition: opacity 0.35s ease, -ms-transform 0.35s ease;
 			transition: opacity 0.35s ease, transform 0.35s ease;
 			-webkit-overflow-scrolling: touch;
-			background: #3d0019;
+			background: #330518;
 			border-radius: 5px;
 			display: block;
 			max-width: 100%;
@@ -3765,7 +3765,7 @@ input, select, textarea {
 			}
 
 		.wrapper.spotlight {
-			background-color: #3d0019;
+			background-color: #330518;
 		}
 
 			.wrapper.spotlight:before, .wrapper.spotlight:after {
@@ -3773,11 +3773,11 @@ input, select, textarea {
 			}
 
 			.wrapper.spotlight:before {
-				box-shadow: inset 0 -1px 0 0 #3d0019, 0 1px 0 0 #3d0019;
+				box-shadow: inset 0 -1px 0 0 #330518, 0 1px 0 0 #330518;
 			}
 
 			.wrapper.spotlight:after {
-				box-shadow: inset 0 -1px 0 0 #3d0019, 0 1px 0 0 #3d0019;
+				box-shadow: inset 0 -1px 0 0 #330518, 0 1px 0 0 #330518;
 			}
 
 			.wrapper.spotlight .inner {
