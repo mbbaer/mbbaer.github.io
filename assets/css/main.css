@@ -100,7 +100,7 @@ input, select, textarea {
 
 	body {
 		background-color: #2e3141;
-		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/stock_images/bg.jpg");
+		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/stock/bg.jpg");
 		background-size: auto,
  cover;
 		background-attachment: fixed,
@@ -2320,7 +2320,7 @@ input, select, textarea {
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			border-color: #4c5c96;
+			border-color: #3d0019;
 		}
 
 	input[type="checkbox"] + label:before {
@@ -2745,7 +2745,7 @@ input, select, textarea {
 				}
 
 				ul.pagination li > .page.active {
-					background-color: #4c5c96;
+					background-color: #3d0019;
 				}
 
 			ul.pagination li:first-child {
@@ -2913,7 +2913,7 @@ input, select, textarea {
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
-			background-color: #4c5c96;
+			background-color: #3d0019;
 			box-shadow: none;
 		}
 
@@ -3281,7 +3281,7 @@ input, select, textarea {
 			-ms-transition: opacity 0.35s ease, -ms-transform 0.35s ease;
 			transition: opacity 0.35s ease, transform 0.35s ease;
 			-webkit-overflow-scrolling: touch;
-			background: #4c5c96;
+			background: #3d0019;
 			border-radius: 5px;
 			display: block;
 			max-width: 100%;
@@ -3466,11 +3466,9 @@ input, select, textarea {
 			#banner {
 				padding: 7em 0 8.25em 0 ;
 				background-color: #2e3141;
-				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/stock_images/bg.jpg");
-				background-size: auto,
- cover;
-				background-position: center,
- center;
+				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.5), rgba(46, 49, 65, 0.5)), url("../../images/gifs/Factory-IO_Scene-3.gif");
+				background-size: auto, cover;
+				background-position: center, center;
 				margin-bottom: -6.5em;
 			}
 
@@ -3578,7 +3576,7 @@ input, select, textarea {
 		#wrapper > header {
 			padding: 9em 0 6.25em 0 ;
 			background-color: #2e3141;
-			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/stock_images/bg.jpg");
+			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/stock/bg.jpg");
 			background-size: auto,
  cover;
 			background-position: center,
@@ -3767,7 +3765,7 @@ input, select, textarea {
 			}
 
 		.wrapper.spotlight {
-			background-color: #4c5c96;
+			background-color: #3d0019;
 		}
 
 			.wrapper.spotlight:before, .wrapper.spotlight:after {
@@ -3775,11 +3773,11 @@ input, select, textarea {
 			}
 
 			.wrapper.spotlight:before {
-				box-shadow: inset 0 -1px 0 0 #4c5c96, 0 1px 0 0 #4c5c96;
+				box-shadow: inset 0 -1px 0 0 #3d0019, 0 1px 0 0 #3d0019;
 			}
 
 			.wrapper.spotlight:after {
-				box-shadow: inset 0 -1px 0 0 #4c5c96, 0 1px 0 0 #4c5c96;
+				box-shadow: inset 0 -1px 0 0 #3d0019, 0 1px 0 0 #3d0019;
 			}
 
 			.wrapper.spotlight .inner {
@@ -4071,7 +4069,7 @@ input, select, textarea {
 
 		#footer {
 			background-color: #2e3141;
-			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/stock_images/bg.jpg");
+			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/stock/bg.jpg");
 			background-size: auto,
  cover;
 			background-position: center,
