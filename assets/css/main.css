@@ -75,7 +75,7 @@ input, select, textarea {
 /* Basic */
 
 	@-ms-viewport {
-		width: device-width;
+		width: auto;
 	}
 
 	body {
@@ -3965,7 +3965,7 @@ input, select, textarea {
 
 				.wrapper.spotlight .inner {
 					-moz-align-items: -moz-flex-start;
-					-webkit-align-items: -webkit-flex-start;
+					-webkit-align-items: flex-start;
 					-ms-align-items: -ms-flex-start;
 					align-items: flex-start;
 				}
