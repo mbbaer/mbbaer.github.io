@@ -3574,7 +3574,7 @@ input, select, textarea {
 /* Wrapper */
 
 	#wrapper > header {
-		padding: 11em 0 2.25em 0 ;
+		padding: 8em 0 8em 0 ;
 	}
 
 		#wrapper > header .inner {
@@ -3585,8 +3585,8 @@ input, select, textarea {
 		#wrapper > header h2 {
 			border-bottom: solid 2px rgba(255, 255, 255, 0.125);
 			font-size: 2em;
-			margin-bottom: 0.8em;
-			padding-bottom: 0.4em;
+			margin-bottom: 0.4em;
+			padding-bottom: 0.2em;
 		}
 
 		#wrapper > header p {
@@ -3601,7 +3601,7 @@ input, select, textarea {
 	@media screen and (max-width: 1280px) {
 
 		#wrapper > header {
-			padding: 9em 0 6.25em 0 ;
+			padding: 8em 0 8em 0 ;
 			background-color: #2e3141;
 			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.4), rgba(46, 49, 65, 0.4)), url("../../images/stock/pic06.jpg");
 			background-position: center, 0% 30%;
@@ -3615,7 +3615,7 @@ input, select, textarea {
 	@media screen and (max-width: 980px) {
 
 		#wrapper > header {
-			padding: 11em 3em 7.375em 3em ;
+			padding: 8em 3em 8em 3em ;
 			background-position: center, 0% 0%;
 			margin-bottom: -4.75em;
 
@@ -4116,10 +4116,8 @@ input, select, textarea {
 		#footer {
 			background-color: #2e3141;
 			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.4), rgba(46, 49, 65, 0.4)), url("../../images/stock/pic06.jpg");
-			background-size: auto,
- cover;
-			background-position: center,
- center;
+			background-size: auto, cover;
+			background-position: center, center;
 			margin-top: -6.5em;
 			padding-top: 6.5em;
 		}
@@ -4129,7 +4127,7 @@ input, select, textarea {
 	@media screen and (max-width: 980px) {
 
 		#footer {
-			margin-top: -4.75em;
+			margin-top: -8.75em;
 			padding-top: 4.75em;
 		}
 
