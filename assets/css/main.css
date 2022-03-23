@@ -449,11 +449,11 @@ input, select, textarea {
 		}
 
 		.row > .col-5 {
-			width: 41.66667%;
+			width: 50%;
 		}
 
 		.row > .off-5 {
-			margin-left: 41.66667%;
+			margin-left: 50%;
 		}
 
 		.row > .col-6 {
