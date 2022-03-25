@@ -3490,11 +3490,12 @@ input, select, textarea {
 			#banner {
 				padding: 7em 0 8.25em 0 ;
 				background-color: #2e3141;
-				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.65), rgba(46, 49, 65, 0.65)), url("../../images/gifs/Factory-IO_Scene-3-Crop.gif");
+				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.65), rgba(46, 49, 65, 0.65)), url("../../images/gifs/Factory-IO_Scene-3_Short_Crop.gif");
 				margin-bottom: -6.5em;
 				height: 100vh;
 				background-size: auto, cover;
 				background-position: center, center;
+				background-repeat: no-repeat;
 			}
 
 		}
@@ -3504,11 +3505,13 @@ input, select, textarea {
 			#banner {
 				padding: 7em 0 8.25em 0 ;
 				background-color: #2e3141;
-				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.65), rgba(46, 49, 65, 0.65)), url("../../images/gifs/Factory-IO_Scene-3-Crop.gif");
+				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.65), rgba(46, 49, 65, 0.65)), url("../../images/gifs/Factory-IO_Scene-3_Short_Crop.gif");
 				margin-bottom: -6.5em;
 				height: 100vh;
 				background-size: auto, cover;
 				background-position: center, center;
+				background-repeat: no-repeat;
+
 			}
 
 		}
@@ -3518,11 +3521,13 @@ input, select, textarea {
 			#banner {
 				padding: 7em 0 8.25em 0 ;
 				background-color: #2e3141;
-				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.65), rgba(46, 49, 65, 0.65)), url("../../images/gifs/Factory-IO_Scene-3-Crop.gif");
+				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.65), rgba(46, 49, 65, 0.65)), url("../../images/gifs/Factory-IO_Scene-3_Short_Crop.gif");
 				margin-bottom: -6.5em;
 				height: 100vh;
 				background-size: auto, cover;
 				background-position: center, center;
+				background-repeat: no-repeat;
+
 
 			}
 
@@ -3532,7 +3537,7 @@ input, select, textarea {
 
 			#banner {
 				padding: 7em 3em 12.375em 3em ;
-				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.65), rgba(46, 49, 65, 0.65)), url("../../images/gifs/Factory-IO_Scene-3-Crop.gif");
+				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.65), rgba(46, 49, 65, 0.65)), url("../../images/gifs/Factory-IO_Scene-3_Short_Crop.gif");
 				margin-bottom: -4.75em;
 				height: 100vh;
 				background-size: auto, cover;
@@ -3549,7 +3554,7 @@ input, select, textarea {
 
 			#banner {
 				padding: 7em 2em 4.25em 2em ;
-				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.65), rgba(46, 49, 65, 0.65)), url("../../images/gifs/Factory-IO_Scene-3-Crop.gif");
+				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.65), rgba(46, 49, 65, 0.65)), url("../../images/gifs/Factory-IO_Scene-3_Short_Crop.gif");
 				margin-bottom: -2.5em;
 				height: 100vh;
 				background-size: auto, cover;
@@ -3571,6 +3576,35 @@ input, select, textarea {
 				#banner p {
 					font-size: 0.8em;
 				}
+
+		}
+
+		@media screen and (max-width: 414px) {
+
+			#banner {
+				padding: 7em 2em 4.25em 2em ;
+				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.65), rgba(46, 49, 65, 0.65)), url("../../images/gifs/Factory-IO_Scene-3_Short_Crop_Tall.gif");
+				margin-bottom: -2.5em;
+				height: 100vh;
+				background-size: auto, cover;
+				background-position: center, center;
+			}
+
+			#banner .logo {
+				margin: 0 0 1em 0;
+			}
+
+			#banner .logo .icon {
+				font-size: 1.5em;
+			}
+
+			#banner h2 {
+				font-size: 1.5em;
+			}
+
+			#banner p {
+				font-size: 0.8em;
+			}
 
 		}
 
