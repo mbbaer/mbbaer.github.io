@@ -3043,8 +3043,14 @@ input, select, textarea {
 		@media screen and (max-width: 980px) {
 
 			.features article {
-				margin: 1em 2em .1em 0;
+				margin: 1em 2em 1em 0;
 				width: calc(50% - 1em);
+			}
+			.features article .image {
+				margin-bottom: 1.5em;
+				margin-left: -1.5em;
+				margin-top: -1.5em;
+				width: calc(100% + 3em);
 			}
 
 		}
@@ -3479,7 +3485,7 @@ input, select, textarea {
 			text-transform: uppercase;
 		}
 
-		@media screen and (max-width: 25600px) {
+		@media screen and (max-width: 2560px) {
 
 			#banner {
 				padding: 7em 0 8.25em 0 ;
