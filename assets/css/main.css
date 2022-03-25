@@ -3484,12 +3484,10 @@ input, select, textarea {
 
 			#banner {
 				padding: 7em 0 8.25em 0 ;
-				background-color: #2e3141;
-				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.65), rgba(46, 49, 65, 0.65)), url("../../images/gifs/Factory-IO_Scene-3-Crop.gif");
 				margin-bottom: -6.5em;
 				height: 100vh;
 				background-size: auto, cover;
-				background-position: center, center;
+				background: #2e3141 linear-gradient(to top, rgba(46, 49, 65, 0.65), rgba(46, 49, 65, 0.65)), url("../../images/gifs/Factory-IO_Scene-3-Crop.gif") fixed center, center;
 			}
 
 		}
@@ -3498,12 +3496,11 @@ input, select, textarea {
 
 			#banner {
 				padding: 7em 0 8.25em 0 ;
-				background-color: #2e3141;
-				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.65), rgba(46, 49, 65, 0.65)), url("../../images/gifs/Factory-IO_Scene-3-Crop.gif");
 				margin-bottom: -6.5em;
 				height: 100vh;
 				background-size: auto, cover;
-				background-position: center, center;
+				background: #2e3141 linear-gradient(to top, rgba(46, 49, 65, 0.65), rgba(46, 49, 65, 0.65)), url("../../images/gifs/Factory-IO_Scene-3-Crop.gif") fixed center, center;
+
 
 			}
 
@@ -3512,8 +3509,12 @@ input, select, textarea {
 		@media screen and (max-width: 980px) {
 
 			#banner {
-				padding: 12em 3em 12.375em 3em ;
+				padding: 7em 3em 12.375em 3em ;
 				margin-bottom: -4.75em;
+				height: 100vh;
+				background-size: auto, cover;
+				background: linear-gradient(to top, rgba(46, 49, 65, 0.65), rgba(46, 49, 65, 0.65)), url("../../images/gifs/Factory-IO_Scene-3-Crop.gif") fixed center, center;
+
 			}
 
 				#banner .inner {
@@ -3525,8 +3526,11 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			#banner {
-				padding: 5em 2em 4.25em 2em ;
+				padding: 7em 2em 4.25em 2em ;
 				margin-bottom: -2.5em;
+				height: 100vh;
+				background-size: auto, cover;
+				background: linear-gradient(to top, rgba(46, 49, 65, 0.65), rgba(46, 49, 65, 0.65)), url("../../images/gifs/Factory-IO_Scene-3-Crop.gif") fixed center, center;
 			}
 
 				#banner .logo {
