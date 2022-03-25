@@ -208,6 +208,7 @@ input, select, textarea {
 				text-transform: none !important;
 				font-family: 'Font Awesome 5 Free';
 				font-weight: 900;
+
 			}
 
 			a.special:not(.button):before {
@@ -417,43 +418,43 @@ input, select, textarea {
 		}
 
 		.row > .col-1 {
-			width: 12.5%;
+			width: 8.3333%;
 		}
 
 		.row > .off-1 {
-			margin-left: 12.5%;
+			margin-left: 8.3333%;
 		}
 
 		.row > .col-2 {
-			width: 25%;
+			width: 16.6666%;
 		}
 
 		.row > .off-2 {
-			margin-left: 25%;
+			margin-left: 16.6666%;
 		}
 
 		.row > .col-3 {
-			width: 37.5%;
+			width: 25%;
 		}
 
 		.row > .off-3 {
-			margin-left: 37.5%;
+			margin-left: 25%;
 		}
 
 		.row > .col-4 {
-			width: 50%;
+			width: 33.3333%;
 		}
 
 		.row > .off-4 {
-			margin-left: 50%;
+			margin-left: 33.3333%;
 		}
 
 		.row > .col-5 {
-			width: 50%;
+			width: 41.6666%;
 		}
 
 		.row > .off-5 {
-			margin-left: 50%;
+			margin-left: 41.6666%;
 		}
 
 		.row > .col-6 {
@@ -465,51 +466,51 @@ input, select, textarea {
 		}
 
 		.row > .col-7 {
-			width: 50%;
+			width: 58.3333%;
 		}
 
 		.row > .off-7 {
-			margin-left: 50%;
+			margin-left: 58.3333%;
 		}
 
 		.row > .col-8 {
-			width: 50%;
+			width: 66.6666%;
 		}
 
 		.row > .off-8 {
-			margin-left: 50%;
+			margin-left: 66.6666%;
 		}
 
 		.row > .col-9 {
-			width: 50%;
+			width: 75%;
 		}
 
 		.row > .off-9 {
-			margin-left: 50%;
+			margin-left: 75%;
 		}
 
 		.row > .col-10 {
-			width: 50%;
+			width: 83.3333%;
 		}
 
 		.row > .off-10 {
-			margin-left: 50%;
+			margin-left: 83.3333%;
 		}
 
 		.row > .col-11 {
-			width: 50%;
+			width: 91.6666%;
 		}
 
 		.row > .off-11 {
-			margin-left: 50%;
+			margin-left: 91.6666%;
 		}
 
 		.row > .col-12 {
-			width: 50%;
+			width: 100%;
 		}
 
 		.row > .off-12 {
-			margin-left: 50%;
+			margin-left: 100%;
 		}
 
 		.row.gtr-0 {
@@ -2088,6 +2089,7 @@ input, select, textarea {
 
 	section.special, article.special {
 		text-align: center;
+
 	}
 
 /* Form */
@@ -2452,8 +2454,8 @@ input, select, textarea {
 			.image.fit img {
 
 				width: 100%;
-				object-fit: cover;
-				height: 260px;
+				object-fit: contain;
+				height: 500px;
 			}
 
 		.image.main {
@@ -3391,6 +3393,7 @@ input, select, textarea {
 
 	#banner {
 		padding: 10em 0 4.75em 0 ;
+		background: fixed;
 	}
 
 		#banner .inner {
@@ -3427,7 +3430,18 @@ input, select, textarea {
 			}
 
 		#banner h2 {
-
+			-moz-transition: opacity 0.1s ease, -moz-transform 0.1s ease, -moz-filter 0.05s ease;
+			-webkit-transition: opacity 0.1s ease, -webkit-transform 0.1s ease, -webkit-filter 0.05s ease;
+			-ms-transition: opacity 0.1s ease, -ms-transform 0.1s ease, -ms-filter 0.05s ease;
+			transition: opacity 0.1s ease, transform 0.1s ease, filter 0.05s ease;
+			-moz-transform: translateX(0);
+			-webkit-transform: translateX(0);
+			-ms-transform: translateX(0);
+			transform: translateX(0);
+			-moz-transition-delay: 0.25s;
+			-webkit-transition-delay: 0.25s;
+			-ms-transition-delay: 0.25s;
+			transition-delay: 0.25s;
 			-moz-filter: blur(0);
 			-webkit-filter: blur(0);
 			-ms-filter: blur(0);
@@ -3441,7 +3455,18 @@ input, select, textarea {
 
 
 		#banner p {
-
+			-moz-transition: opacity 0.1s ease, -moz-transform 0.1s ease, -moz-filter 0.05s ease;
+			-webkit-transition: opacity 0.1s ease, -webkit-transform 0.1s ease, -webkit-filter 0.05s ease;
+			-ms-transition: opacity 0.1s ease, -ms-transform 0.1s ease, -ms-filter 0.05s ease;
+			transition: opacity 0.1s ease, transform 0.1s ease, filter 0.05s ease;
+			-moz-transform: translateX(0);
+			-webkit-transform: translateX(0);
+			-ms-transform: translateX(0);
+			transform: translateX(0);
+			-moz-transition-delay: 0.5s;
+			-webkit-transition-delay: 0.5s;
+			-ms-transition-delay: 0.5s;
+			transition-delay: 0.5s;
 			-moz-filter: blur(0);
 			-webkit-filter: blur(0);
 			-ms-filter: blur(0);
