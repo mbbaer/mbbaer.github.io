@@ -3394,6 +3394,7 @@ input, select, textarea {
 	#banner {
 		padding: 10em 0 4.75em 0 ;
 		background: fixed;
+		background-repeat: no-repeat;
 	}
 
 		#banner .inner {
@@ -3487,6 +3488,7 @@ input, select, textarea {
 				margin-bottom: -6.5em;
 				height: 100vh;
 				background-size: auto, cover;
+				background-repeat: no-repeat;
 				background: #2e3141 linear-gradient(to top, rgba(46, 49, 65, 0.65), rgba(46, 49, 65, 0.65)), url("../../images/gifs/Factory-IO_Scene-3-Crop.gif") fixed center, center;
 			}
 
@@ -3499,6 +3501,7 @@ input, select, textarea {
 				margin-bottom: -6.5em;
 				height: 100vh;
 				background-size: auto, cover;
+				background-repeat: no-repeat;
 				background: #2e3141 linear-gradient(to top, rgba(46, 49, 65, 0.65), rgba(46, 49, 65, 0.65)), url("../../images/gifs/Factory-IO_Scene-3-Crop.gif") fixed center, center;
 
 
@@ -3513,6 +3516,7 @@ input, select, textarea {
 				margin-bottom: -4.75em;
 				height: 100vh;
 				background-size: auto, cover;
+				background-repeat: no-repeat;
 				background: linear-gradient(to top, rgba(46, 49, 65, 0.65), rgba(46, 49, 65, 0.65)), url("../../images/gifs/Factory-IO_Scene-3-Crop.gif") fixed center, center;
 
 			}
@@ -3530,6 +3534,7 @@ input, select, textarea {
 				margin-bottom: -2.5em;
 				height: 100vh;
 				background-size: auto, cover;
+				background-repeat: no-repeat;
 				background: linear-gradient(to top, rgba(46, 49, 65, 0.65), rgba(46, 49, 65, 0.65)), url("../../images/gifs/Factory-IO_Scene-3-Crop.gif") fixed center, center;
 			}
 
