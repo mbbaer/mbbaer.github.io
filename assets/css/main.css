@@ -3585,15 +3585,12 @@ input, select, textarea {
 		@media screen and (max-width: 414px) {
 
 			#banner {
-				height: 500px;
-				width: 100%;
 				padding: 7em 2em 4.25em 2em ;
 				background-repeat: no-repeat;
 				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.65), rgba(46, 49, 65, 0.65)), url("../../images/gifs/Factory-IO_Scene-3_Short_Crop.gif");
-				background-size: auto, 220%;
+				background-size: auto, cover;
 				margin-bottom: -2.5em;
 				position: center;
-				background-position: top;
 				background-attachment: fixed;
 			}
 
