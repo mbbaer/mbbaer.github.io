@@ -3398,6 +3398,7 @@ input, select, textarea {
 
 	#banner {
 		padding: 10em 0 4.75em 0 ;
+		background: fixed;
 	}
 
 		#banner .inner {
@@ -3495,7 +3496,6 @@ input, select, textarea {
 				background-size: auto, cover;
 				background-position: center, center;
 				background-repeat: no-repeat;
-				background-attachment: fixed;
 			}
 
 		}
@@ -3511,7 +3511,6 @@ input, select, textarea {
 				background-size: auto, cover;
 				background-position: center, center;
 				background-repeat: no-repeat;
-				background-attachment: fixed;
 
 			}
 
@@ -3528,7 +3527,7 @@ input, select, textarea {
 				background-size: auto, cover;
 				background-position: center, center;
 				background-repeat: no-repeat;
-				background-attachment: fixed;
+
 
 			}
 
@@ -3543,7 +3542,8 @@ input, select, textarea {
 				height: 100vh;
 				background-size: auto, cover;
 				background-position: center, center;
-				background-attachment: fixed;
+				background-repeat: no-repeat;
+
 			}
 
 				#banner .inner {
@@ -3558,10 +3558,10 @@ input, select, textarea {
 				padding: 7em 2em 4.25em 2em ;
 				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.65), rgba(46, 49, 65, 0.65)), url("../../images/gifs/Factory-IO_Scene-3_Short_Crop.gif");
 				margin-bottom: -2.5em;
-				background-size: auto, cover;
 				height: 100vh;
+				background-size: auto, cover;
 				background-position: center, center;
-				background-attachment: fixed;
+				background-repeat: no-repeat;
 			}
 
 				#banner .logo {
@@ -3586,12 +3586,11 @@ input, select, textarea {
 
 			#banner {
 				padding: 7em 2em 4.25em 2em ;
-				background-repeat: no-repeat;
 				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.65), rgba(46, 49, 65, 0.65)), url("../../images/gifs/Factory-IO_Scene-3_Short_Crop.gif");
-				background-size: auto, cover;
 				margin-bottom: -2.5em;
-				position: center;
-				background-attachment: fixed;
+				background-size: auto;
+				background-position: center, center;
+				background-repeat: no-repeat;
 			}
 
 			#banner .logo {
