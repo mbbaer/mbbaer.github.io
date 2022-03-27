@@ -1,4 +1,2 @@
 # mbbaer.github.io
-This is my portfolio website.<br><br>
-&copy; Michael Baer. All rights reserved.</li>
-
+This is my portfolio website. Starting point provided by <a href="https://html5up.net/">HTML5 UP.</a><br><br>
