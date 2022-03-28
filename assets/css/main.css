@@ -3036,6 +3036,8 @@ input, select, textarea {
 
 			.features article {
 				margin: 1em 2em 1em 0;
+				padding: 1.5em 1.5em 0.1em 1.5em ;
+
 				width: calc(50% - 1em);
 			}
 			.features article .image {
