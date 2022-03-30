@@ -1,180 +1,179 @@
 <!DOCTYPE HTML>
-<html>
-<head>
-	<title>Michael Baer: Projects</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="../../assets/css/main.css" />
-	<noscript><link rel="stylesheet" href="../../assets/css/noscript.css" /></noscript>
+<html lang="e">
+	<head>
+		<title>Michael Baer: Projects</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../../assets/css/noscript.css" /></noscript>
 
-	<style>
-		* {
-			box-sizing: border-box;
-		}
-		img {
-			width: 100%;
-
-			margin-left: auto;
-			margin-right: auto;
-		}
-
-		/* Create two equal columns that floats next to each other */
-		.column {
-			float: left;
-		}
-		.left {
-			width: 50%;
-		}
-
-		.right {
-			width: 50%;
-		}
-
-		/* Clear floats after the columns */
-		.row:after {
-			content: "";
-			display: table;
-			clear: both;
-		}
-
-		/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-
-
-		@media screen and (max-width: 980px) {
-			.column {
-				width: 100%;
+		<style>
+			* {
+				box-sizing: border-box;
 			}
 			img {
 				width: 100%;
-				max-height: 530px;
-				max-width: 300px;
+
 				margin-left: auto;
 				margin-right: auto;
 			}
-		}
-	</style>
-</head>
 
-<body class="is-preload">
-<!-- Page Wrapper -->
-<div id="page-wrapper">
-	<!-- Header -->
-	<header id="header">
-		<h1><a href="../../index.html">Home</a></h1>
-		<nav>
-			<a href="#menu">Menu</a>
-		</nav>
-	</header>
+			/* Create two equal columns that floats next to each other */
+			.column {
+				float: left;
+			}
+			.left {
+				width: 50%;
+			}
 
-	<!-- Menu -->
-	<nav id="menu">
-		<div class="inner">
-			<h2>Menu</h2>
-			<ul class="links">
-				<li><a href="../../index.html">Home</a></li>
-				<li><a href="../resume.html">Resume</a></li>
-				<li><a href="../view_all.html">Projects</a></li>
-			</ul>
-			<a href="#" class="close">Close</a>
-		</div>
-	</nav>
+			.right {
+				width: 50%;
+			}
 
-	<!-- Wrapper -->
-	<section id="wrapper">
-		<header>
-			<div class="inner">
-				<h2>Industrial Control Systems: Logic Bomb</h2>
-				<p>Using Factory IO and Control IO, I modeled an industrial control system (ICS)
-					and programmed logic bombs to simulate real-life cyber-physical threats.</p>
-			</div>
+			/* Clear floats after the columns */
+			.row:after {
+				content: "";
+				display: table;
+				clear: both;
+			}
+
+			/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
+
+			@media screen and (max-width: 980px) {
+				.column {
+					width: 100%;
+				}
+				img {
+					width: 100%;
+					max-height: 530px;
+					max-width: 300px;
+					margin-left: auto;
+					margin-right: auto;
+				}
+			}
+		</style>
+	</head>
+
+	<body class="is-preload">
+	<!-- Page Wrapper -->
+	<div id="page-wrapper">
+		<!-- Header -->
+		<header id="header">
+			<h1><a href="../../index.html">Home</a></h1>
+			<nav>
+				<a href="#menu">Menu</a>
+			</nav>
 		</header>
 
-		<!-- Content -->
-		<div class="wrapper">
+		<!-- Menu -->
+		<nav id="menu">
 			<div class="inner">
-				<h2>Background</h2>
-				<p>In order to understand the concepts of cyber-physical systems (CPS), it is necessary to get familiar with their control logics and mechanisms.
-					In this project, I modeled an industrial control system (ICS) using Factory I/O coupled with Control I/O.
-					Logic bombs were introduced to the environment after specific conditions were met.
-				</p>
-				<h2>Requirements</h2>
-				<p>A detailed list of requirements can be found in <a href="factory_io_requirements.html">this document.</a></p>
-				<h2>Implementation</h2>
-				<p>A logic bomb is a set of instructions incorporated into a program so that if some condition is met,
-				the instructions will be executed. In this project, the logic bombs resulted in a change to the normal operation
-				that might have resulted in an unobserved harmful downstream effect.</p>
-				<h4>Role</h4>
-				<ul>
-					<li><b>Controls Engineer:</b> Responsible for configuring PLC logic, conducting simulation and verification, and supporting validation of requirements.</li>
+				<h2>Menu</h2>
+				<ul class="links">
+					<li><a href="../../index.html">Home</a></li>
+					<li><a href="../resume.html">Resume</a></li>
+					<li><a href="../view_all.html">Projects</a></li>
 				</ul>
-
-				<h4>Key Activities/Deliverables</h4>
-				<ul>
-					<li><b>Controller Logic:</b> Led the controls development, design, programming, and implementation used in the process control systems.</li>
-					<li><b>Logic Bomb:</b> Programmed logic bombs to trigger after specific conditions were met.
-						Logic bombs contained features that disabled shutdown/ kill-switch functionality.</li>
-					<li><b>System Testing:</b> Troubleshot systems to ensure no bugs were present and requirements were met.</li>
-				</ul>
-
-				<h4>Key Features</h4>
-				<ul>
-					<li><b>Factory I/O:</b> Factory I/O was used to create the 3-D model of the industrial control processes.</li>
-					<li><b>Control I/O:</b> Control I/O was used to program the controller under normal operating conditions and implement the logic bombs.</li>
-				</ul>
-				<h4>Logic Bomb Demonstration: Scene 3</h4>
-
-				<div class="row">
-					<div class="column left">
-						<p>Under normal operating conditions, the Scene 3 sorting station should sort Green lids to the right (toward the camera), Gray lids to the left, and Blue lids to the middle. The lid+base should continue travelling down the respective conveyor belt and be removed by the Remover. </p>
-					</div>
-
-
-					<div class="column right">
-						<p><img src="/images/gifs/Factory-IO_Scene-3_Short_Crop.gif" alt="Scene 3" title="Scene 3"></p>
-					</div>
-				</div>
-
-
-				<div class="row">
-					<div class="column left">
-						<p>The logic bomb caused the sorting of green and gray packages to switch.
-							Because there were no changes to the control box logic, incorrect numbers were reported.
-							Finally, the system stopped responding to the start and stop buttons after the logic bomb was triggered.</p>
-					</div>
-
-
-					<div class="column right">
-						<p><img src="/images/gifs/Factory-IO_Scene-3-LB_Trim_Crop.gif" alt="Scene 3 Logic Bomb" title="Scene 3 Logic Bomb"></p>
-					</div>
-				</div>
-
-				<p>Videos of the complete working solutions can be found <a href="https://github.com/mbbaer/mbbaer.github.io/tree/main/videos/factory_io" target="_blank">in this folder.</a></p>
-
-
+				<a href="#" class="close">Close</a>
 			</div>
-		</div>
+		</nav>
 
-	</section>
+		<!-- Wrapper -->
+		<section id="wrapper">
+			<header>
+				<div class="inner">
+					<h2>Industrial Control Systems: Logic Bomb</h2>
+					<p>Using Factory IO and Control IO, I modeled an industrial control system (ICS)
+						and programmed logic bombs to simulate real-life cyber-physical threats.</p>
+				</div>
+			</header>
+
+			<!-- Content -->
+			<div class="wrapper">
+				<div class="inner">
+					<h2>Background</h2>
+					<p>In order to understand the concepts of cyber-physical systems (CPS), it is necessary to get familiar with their control logics and mechanisms.
+						In this project, I modeled an industrial control system (ICS) using Factory I/O coupled with Control I/O.
+						Logic bombs were introduced to the environment after specific conditions were met.
+					</p>
+					<h2>Requirements</h2>
+					<p>A detailed list of requirements can be found in <a href="factory_io_requirements.html">this document.</a></p>
+					<h2>Implementation</h2>
+					<p>A logic bomb is a set of instructions incorporated into a program so that if some condition is met,
+					the instructions will be executed. In this project, the logic bombs resulted in a change to the normal operation
+					that might have resulted in an unobserved harmful downstream effect.</p>
+					<h4>Role</h4>
+					<ul>
+						<li><b>Controls Engineer:</b> Responsible for configuring PLC logic, conducting simulation and verification, and supporting validation of requirements.</li>
+					</ul>
+
+					<h4>Key Activities/Deliverables</h4>
+					<ul>
+						<li><b>Controller Logic:</b> Led the controls development, design, programming, and implementation used in the process control systems.</li>
+						<li><b>Logic Bomb:</b> Programmed logic bombs to trigger after specific conditions were met.
+							Logic bombs contained features that disabled shutdown/ kill-switch functionality.</li>
+						<li><b>System Testing:</b> Troubleshot systems to ensure no bugs were present and requirements were met.</li>
+					</ul>
+
+					<h4>Key Features</h4>
+					<ul>
+						<li><b>Factory I/O:</b> Factory I/O was used to create the 3-D model of the industrial control processes.</li>
+						<li><b>Control I/O:</b> Control I/O was used to program the controller under normal operating conditions and implement the logic bombs.</li>
+					</ul>
+					<h4>Logic Bomb Demonstration: Scene 3</h4>
+
+					<div class="row">
+						<div class="column left">
+							<p>Under normal operating conditions, the Scene 3 sorting station should sort Green lids to the right (toward the camera), Gray lids to the left, and Blue lids to the middle. The lid+base should continue travelling down the respective conveyor belt and be removed by the Remover. </p>
+						</div>
+
+
+						<div class="column right">
+							<p><img src="/images/gifs/Factory-IO_Scene-3_Short_Crop.gif" alt="Scene 3" title="Scene 3"></p>
+						</div>
+					</div>
+
+
+					<div class="row">
+						<div class="column left">
+							<p>The logic bomb caused the sorting of green and gray packages to switch.
+								Because there were no changes to the control box logic, incorrect numbers were reported.
+								Finally, the system stopped responding to the start and stop buttons after the logic bomb was triggered.</p>
+						</div>
+
+
+						<div class="column right">
+							<p><img src="/images/gifs/Factory-IO_Scene-3-LB_Trim_Crop.gif" alt="Scene 3 Logic Bomb" title="Scene 3 Logic Bomb"></p>
+						</div>
+					</div>
+
+					<p>Videos of the complete working solutions can be found <a href="https://github.com/mbbaer/mbbaer.github.io/tree/main/videos/factory_io" target="_blank">in this folder.</a></p>
+
+
+				</div>
+			</div>
+
+		</section>
 
 
 
-	<!-- Footer -->
-	<section id="footer">
-		<div class="inner">
-			</ul>
-			<ul class="copyright">
-				<li>&copy; Michael Baer. All rights reserved.</li>
-			</ul>
-		</div>
-	</section>
-</div>
+		<!-- Footer -->
+		<section id="footer">
+			<div class="inner">
+				<ul class="copyright">
+					<li>&copy; Michael Baer. All rights reserved.</li>
+				</ul>
+			</div>
+		</section>
+	</div>
 
-<!-- Scripts -->
-<script src="../../assets/js/jquery.min.js"></script>
-<script src="../../assets/js/jquery.scrollex.min.js"></script>
-<script src="../../assets/js/browser.min.js"></script>
-<script src="../../assets/js/breakpoints.min.js"></script>
-<script src="../../assets/js/util.js"></script>
-<script src="../../assets/js/main.js"></script>
-</body>
+	<!-- Scripts -->
+	<script src="../../assets/js/jquery.min.js"></script>
+	<script src="../../assets/js/jquery.scrollex.min.js"></script>
+	<script src="../../assets/js/browser.min.js"></script>
+	<script src="../../assets/js/breakpoints.min.js"></script>
+	<script src="../../assets/js/util.js"></script>
+	<script src="../../assets/js/main.js"></script>
+	</body>
 </html>
