@@ -3449,12 +3449,14 @@ input, select, textarea {
 	#banner {
 		padding: 10em 0 2.75em 0 ;
 		background-color: #2e3141;
+
 	}
 
 		#banner .inner {
 			margin: 0 auto;
 			width: 55em;
 			height: calc(100vh - 9em);
+
 		}
 			#banner	.inner .scroll{
 				position: absolute;
@@ -3462,6 +3464,7 @@ input, select, textarea {
 				text-align: center;
 				left: 1%;
 				right: 1%;
+
 			}
 
 		#banner .logo {
@@ -3824,9 +3827,15 @@ input, select, textarea {
 		}
 
 		.wrapper .inner {
-			padding: 4em 0 2em 0 ;
+			padding: 5em 0 0 0;
 			margin: 0 auto;
 			width: 55em;
+		}
+		.wrapper .inner .test {
+			bottom: 0;
+			text-align: center;
+			left: 1%;
+			right: 1%;
 		}
 
 
@@ -3948,8 +3957,8 @@ input, select, textarea {
 
 			.wrapper.spotlight .image {
 				border-radius: 100%;
-				margin: 0 3em 2em 0;
-				width: 22em;
+				margin: 0 2em 2em 0;
+				width: 24em;
 				overflow: hidden;
 				-ms-flex: 1;
 			}
@@ -4076,17 +4085,17 @@ input, select, textarea {
 				}
 
 				.wrapper .inner {
-					padding: 3em 3em 2em 3em ;
+					padding: 5em 3em 0 3em ;
 					width: 100%;
 				}
 
 				.wrapper.spotlight .image {
 					margin: 0 2em 2em 0;
-					width: 32em;
+					width: 20em;
 				}
 
 				.wrapper.spotlight:nth-child(2n - 1) .image {
-					margin: 0 0 2em 2em;
+					margin: 2em 0 2em 2em;
 				}
 
 		}
@@ -4111,7 +4120,7 @@ input, select, textarea {
 				}
 
 				.wrapper .inner {
-					padding: 2em 2em 2em 2em ;
+					padding: 5em 2em 1em 2em ;
 				}
 
 				.wrapper.spotlight .inner {
@@ -4132,7 +4141,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 480px) {
+		@media screen and (max-width: 600px) {
 
 			.wrapper.spotlight .inner {
 				display: block;
@@ -4141,15 +4150,32 @@ input, select, textarea {
 			.wrapper.spotlight .image {
 				margin: 0 0 1em 0 !important;
 				max-width: 85%;
-				width: 12em;
+				width: 19em;
+			}
+			.wrapper.spotlight .content {
+				text-align: center;
 			}
 
 		}
 
+			@media screen and (max-width: 480px) {
+
+				.wrapper.spotlight .inner {
+					display: block;
+				}
+
+				.wrapper.spotlight .image {
+					margin: 0 0 1em 0 !important;
+					max-width: 85%;
+					width: 16em;
+				}
+
+			}
+
 		@media screen and (max-width: 360px) {
 
 			.wrapper .inner {
-				padding: 2em 1.5em 2em 1.5em ;
+				padding: 4em 1.5em 0 1.5em ;
 			}
 
 		}
