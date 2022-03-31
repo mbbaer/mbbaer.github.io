@@ -18,7 +18,9 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: baseline;
+	scroll-behavior: smooth;
+}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -238,7 +240,7 @@ input, select, textarea {
 				border-bottom: 0;
 				display: block;
 				font-family: Raleway, Helvetica, sans-serif;
-				font-size: 0.8em;
+				font-size: 1em;
 				font-weight: 700;
 				letter-spacing: 0.1em;
 				margin: 0 0 2em 0;
@@ -3445,14 +3447,22 @@ input, select, textarea {
 /* Banner */
 
 	#banner {
-		padding: 10em 0 4.75em 0 ;
+		padding: 10em 0 2.75em 0 ;
 		background-color: #2e3141;
 	}
 
 		#banner .inner {
 			margin: 0 auto;
 			width: 55em;
+			height: calc(100vh - 9em);
 		}
+			#banner	.inner .scroll{
+				position: absolute;
+				bottom: 0;
+				text-align: center;
+				left: 1%;
+				right: 1%;
+			}
 
 		#banner .logo {
 			-moz-transition: opacity 1s ease, -moz-transform .5s ease;
@@ -3536,7 +3546,7 @@ input, select, textarea {
 		@media screen and (max-width: 2560px) {
 
 			#banner {
-				padding: 7em 0 8.25em 0 ;
+				padding: 7em 0 2em 0 ;
 				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.65), rgba(46, 49, 65, 0.65)), url("/images/gifs/Factory-IO_Scene-3_Short_Crop.gif");
 				margin-bottom: -6.5em;
 				height: 100vh;
@@ -3551,7 +3561,7 @@ input, select, textarea {
 		@media screen and (max-width: 1920px) {
 
 			#banner {
-				padding: 7em 0 8.25em 0 ;
+				padding: 7em 0 2em 0 ;
 			}
 
 		}
@@ -3559,7 +3569,7 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			#banner {
-				padding: 7em 0 8.25em 0 ;
+				padding: 7em 0 2em 0 ;
 			}
 
 		}
@@ -3567,7 +3577,7 @@ input, select, textarea {
 		@media screen and (max-width: 980px) {
 
 			#banner {
-				padding: 7em 3em 12.375em 3em ;
+				padding: 7em 3em 2em 3em ;
 				margin-bottom: -4.75em;
 			}
 
@@ -3580,7 +3590,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			#banner {
-				padding: 7em 2em 4.25em 2em ;
+				padding: 7em 2em 2em 2em ;
 				margin-bottom: -2.5em;
 
 
@@ -3607,7 +3617,7 @@ input, select, textarea {
 		@media screen and (max-width: 414px) {
 
 			#banner {
-				padding: 7em 2em 4.25em 2em ;
+				padding: 7em 2em 2em 2em ;
 				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.65), rgba(46, 49, 65, 0.65)), url("/images/gifs/Factory-IO_Scene-3_Short_Crop.gif");
 				margin-bottom: -2.5em;
 				background-attachment: scroll;
