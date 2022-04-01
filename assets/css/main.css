@@ -97,7 +97,7 @@ input, select, textarea {
 
 	body {
 		background-color: #2e3141;
-		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.4), rgba(46, 49, 65, 0.4)), url("../../images/stock/pic06.jpg");
+		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.4), rgba(46, 49, 65, 0.4)), url("../images/stock/pic06.jpg");
 		background-size: auto,
  cover;
 		background-attachment: fixed,
@@ -3551,7 +3551,7 @@ input, select, textarea {
 
 			#banner {
 				padding: 7em 0 2em 0 ;
-				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.65), rgba(46, 49, 65, 0.65)), url("/images/gifs/Factory-IO_Scene-3_Short_Crop.gif");
+				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.65), rgba(46, 49, 65, 0.65)), url("/assets/images/gifs/Factory-IO_Scene-3_Short_Crop.gif");
 				margin-bottom: -6.5em;
 				height: 100vh;
 				background-size: auto, cover;
@@ -3622,7 +3622,7 @@ input, select, textarea {
 
 			#banner {
 				padding: 7em 2em 2em 2em ;
-				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.65), rgba(46, 49, 65, 0.65)), url("/images/gifs/Factory-IO_Scene-3_Short_Crop.gif");
+				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.65), rgba(46, 49, 65, 0.65)), url("/assets/images/gifs/Factory-IO_Scene-3_Short_Crop.gif");
 				margin-bottom: -2.5em;
 				background-attachment: scroll;
 
@@ -3679,6 +3679,15 @@ input, select, textarea {
 			filter: blur(2px);
 		}
 
+/* Video */
+
+	#myVideo {
+		position: fixed;
+		height: 100vh;
+		right: 0;
+		bottom: 0;
+	}
+
 /* Wrapper */
 
 	#wrapper > header {
@@ -3712,7 +3721,7 @@ input, select, textarea {
 		#wrapper > header {
 			padding: 4em 0 4em 0 ;
 			background-color: #2e3141;
-			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.4), rgba(46, 49, 65, 0.4)), url("../../images/stock/pic06.jpg");
+			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.4), rgba(46, 49, 65, 0.4)), url("../images/stock/pic06.jpg");
 			background-position: center, 0% 30%;
 			margin-bottom: -6.5em;
 			background-repeat: no-repeat;
@@ -4247,7 +4256,7 @@ input, select, textarea {
 
 		#footer {
 			background-color: #2e3141;
-			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.4), rgba(46, 49, 65, 0.4)), url("../../images/stock/pic06.jpg");
+			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.4), rgba(46, 49, 65, 0.4)), url("../images/stock/pic06.jpg");
 			background-size: auto, cover;
 			background-position: center, center;
 			margin-top: -6.5em;
