@@ -3551,7 +3551,8 @@ input, select, textarea {
 
 			#banner {
 				padding: 7em 0 2em 0 ;
-				background: linear-gradient(to top, rgba(46, 49, 65, 0.65), rgba(46, 49, 65, 0.65)), url("/assets/videos/combined_mp4_crop.mp4");
+				background: linear-gradient(to top, rgba(46, 49, 65, 0.65), rgba(46, 49, 65, 0.65)), url("/assets/images/gifs/Factory-IO_Scene-3_Short_Crop.gif");
+
 				margin-bottom: -6.5em;
 				height: 100vh;
 				background-size: auto, cover;
@@ -3679,16 +3680,7 @@ input, select, textarea {
 			filter: blur(2px);
 		}
 
-/* Video */
 
-	#myVideo {
-		position: fixed;
-		bottom: 0;
-		min-width: 100%;
-		min-height: 100%;
-		background-size: auto, cover;
-		background-position: center, center;
-	}
 
 /* Wrapper */
 
@@ -4097,7 +4089,7 @@ input, select, textarea {
 				}
 
 				.wrapper .inner {
-					padding: 5em 3em 0 3em ;
+					padding: 5em 3em 2em 3em ;
 					width: 100%;
 				}
 
@@ -4132,7 +4124,7 @@ input, select, textarea {
 				}
 
 				.wrapper .inner {
-					padding: 5em 2em 1em 2em ;
+					padding: 5em 2em 2em 2em ;
 				}
 
 				.wrapper.spotlight .inner {
@@ -4187,7 +4179,7 @@ input, select, textarea {
 		@media screen and (max-width: 360px) {
 
 			.wrapper .inner {
-				padding: 4em 1.5em 0 1.5em ;
+				padding: 4em 1.5em 2em 1.5em ;
 			}
 
 		}
