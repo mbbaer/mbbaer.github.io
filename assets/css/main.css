@@ -277,10 +277,10 @@ input, select, textarea {
 				margin-right: 0.85em;
 				text-align: center;
 				text-indent: 0.15em;
-				vertical-align: bottom;
-				horiz-align: center;
+				vertical-align: center;
 				width: 2em;
 			}
+
 
 			a.special2:not(.button):hover:before {
 				background-color: rgba(255, 255, 255, 0.025);
