@@ -54,7 +54,7 @@
 
 .container_solid2 .title_wrapper2 h1 {
     /* the text background */
-    background: url(https://images.unsplash.com/photo-1575058752200-a9d6c0f41945?&q=85);
+    background: linear-gradient(to top, rgba(46, 49, 65, 0.65), rgba(46, 49, 65, 0.65)), url(/assets/images/gifs/Factory-IO_Scene-3_Short_Crop.gif);
     background-size: 100vw auto;
     background-position: center;
 
@@ -70,8 +70,8 @@
 
 .container_image2 {
     /* Grab a free image from unsplash */
-    background-image: url(https://images.unsplash.com/photo-1575058752200-a9d6c0f41945?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
-    background-size:100vw auto;
+    background-image: linear-gradient(to top, rgba(46, 49, 65, 0.65), rgba(46, 49, 65, 0.65)), url(/assets/images/gifs/Factory-IO_Scene-3_Short_Crop.gif);
+    background-size:100% 100vh;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
