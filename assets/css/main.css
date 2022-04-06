@@ -1,5 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Raleway:200,700|Source+Sans+Pro:300,600,300italic,600italic");
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@900&display=swap');
 
 
 html, body, div, span, applet, object,
@@ -3436,6 +3437,112 @@ input, select, textarea {
 		background-color: #2e3141;
 
 	}
+		#banner .scroll {
+			height: 200vh;
+		}
+
+		#banner .container {
+			/* hide fixed overflow contents */
+			clip: rect(0, auto, auto, 0);
+
+			/* does not work if overflow = visible */
+			overflow: hidden;
+
+			/* only works with absolute positioning */
+			position: absolute;
+
+			/* Make sure containers are full-width and height */
+			height: 200vh;
+			left: 0;
+			width: 100%;
+
+
+			/* safari hack */
+			-webkit-mask-image: -webkit-linear-gradient(top, #ffffff 0%,#ffffff 100%);
+		}
+
+		#banner .container_solid {
+			background: white;
+
+			/* position this container at the top of its parent element */
+			top: 0;
+		}
+
+		#banner .title_wrapper {
+			position: fixed;
+			display: block;
+			margin: auto;
+			width: 100%;
+			/* center the text wrapper vertically */
+			top: 50%;
+			-webkit-transform: translateY(-50%);
+			-ms-transform: translateY(-50%);
+			transform: translateY(-50%);
+		}
+
+		#banner .title_wrapper h1 {
+			text-align: center;
+			font-size: 64px;
+			text-transform: uppercase;
+			text-align: center;
+			font-family: 'Raleway', serif;
+			font-weight: 900;
+		}
+
+		#banner .title_wrapper h2 {
+			text-align: center;
+			text-transform: uppercase;
+			text-align: center;
+			font-family: 'Raleway', serif;
+			font-weight: 900;
+		}
+
+		#banner .container_solid .title_wrapper h1 {
+			/* the text background */
+			background: linear-gradient(to top, rgba(46, 49, 65, 0.65), rgba(46, 49, 65, 0.65)), url(/assets/images/gifs/Factory-IO_Scene-3_Short_Crop.gif);
+			background-size: 100vw auto;
+			background-position: center;
+
+			/* clip the text is possible */
+			text-fill-color: transparent;
+			-webkit-text-fill-color: transparent;
+			-webkit-background-clip: text;
+
+			/* fallback text color */
+			color: black;
+		}
+
+		#banner .container_image {
+			/* Grab a free image from unsplash */
+			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.65), rgba(46, 49, 65, 0.65)), url(/assets/images/gifs/Factory-IO_Scene-3_Short_Crop.gif);
+			background-size: auto 100vh;
+			background-position: center;
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+
+
+			/*need to fix this part
+
+			/* position the second container below the first container */
+			top: 100vh;
+		}
+
+		#banner .container_image .title_wrapper h1 {
+			color: white;
+		}
+
+
+		@media screen and (max-width: 600px) {
+			#banner .title_wrapper h1 {
+				text-align: center;
+				font-size: 48px;
+				text-transform: uppercase;
+				text-align: center;
+				font-family: 'Raleway', serif;
+				font-weight: 900;
+			}
+		}
+
 
 		#banner .inner {
 			margin: 0 auto;
@@ -3444,14 +3551,6 @@ input, select, textarea {
 
 		}
 
-			#banner	.inner .scroll{
-				position: absolute;
-				bottom: 0;
-				text-align: center;
-				left: 1%;
-				right: 1%;
-
-			}
 
 		#banner .logo {
 			-moz-transition: opacity 1s ease, -moz-transform .5s ease;
