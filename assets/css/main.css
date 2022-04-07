@@ -3580,6 +3580,7 @@ input, select, textarea {
 
 			#banner {
 				margin-bottom: -2.5em;
+				background-size: contain;
 			}
 
 
