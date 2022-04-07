@@ -3607,6 +3607,9 @@ input, select, textarea {
 
 			#banner {
 				padding: 7em 2em 2em 2em ;
+				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.65), rgba(46, 49, 65, 0.65)), url("/assets/images/gifs/Factory-IO_Scene-3_Short_Crop.gif");
+				margin-bottom: -2.5em;
+				background-attachment: scroll;
 
 			}
 
