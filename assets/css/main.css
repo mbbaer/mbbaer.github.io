@@ -3568,11 +3568,7 @@ input, select, textarea {
 			#banner {
 				padding: 7em 3em 2em 3em ;
 				margin-bottom: -4.75em;
-				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.65), rgba(46, 49, 65, 0.65)), url("/assets/images/gifs/Factory-IO_Scene-3_Short_Crop.gif");
-				background-size: auto, 600px;
-				background-position: center, center;
-				background-repeat: no-repeat;
-				background-attachment: fixed;
+
 
 			}
 
@@ -3582,11 +3578,16 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 600px) {
 
 			#banner {
 				margin-bottom: -2.5em;
 				background-color: #2e3141;
+				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.65), rgba(46, 49, 65, 0.65)), url("/assets/images/gifs/Factory-IO_Scene-3_Short_Crop_Tall.gif");
+				background-size: auto, 640px;
+				background-position: center, center;
+				background-repeat: no-repeat;
+				background-attachment: fixed;
 			}
 
 
