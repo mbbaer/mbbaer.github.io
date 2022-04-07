@@ -3567,11 +3567,16 @@ input, select, textarea {
 			#banner {
 				padding: 7em 3em 2em 3em ;
 				margin-bottom: -4.75em;
+				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.65), rgba(46, 49, 65, 0.65)), url("/assets/images/gifs/Factory-IO_Scene-3_Short_Crop_Tall.gif");
+				height: 100vh;
+				background-size: cover, cover;
+				background-position: center, center;
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+
+
 			}
 
-				#banner .inner {
-					width: 100%;
-				}
 
 		}
 
