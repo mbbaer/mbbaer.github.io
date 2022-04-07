@@ -3585,6 +3585,9 @@ input, select, textarea {
 			#banner {
 				padding: 7em 3em 2em 3em ;
 				margin-bottom: -4.75em;
+				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.65), rgba(46, 49, 65, 0.65)), url("/assets/images/gifs/Factory-IO_Scene-3_Short_Crop_Tall.gif");
+				margin-bottom: -2.5em;
+				background-attachment: scroll;
 
 
 			}
@@ -3600,9 +3603,7 @@ input, select, textarea {
 			#banner {
 				margin-bottom: -2.5em;
 				padding: 7em 2em 2em 2em;
-				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.65), rgba(46, 49, 65, 0.65)), url("/assets/images/gifs/Factory-IO_Scene-3_Short_Crop_Tall.gif");
-				margin-bottom: -2.5em;
-				background-attachment: scroll;
+
 
 			}
 
