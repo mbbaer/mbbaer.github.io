@@ -3101,7 +3101,6 @@ input, select, textarea {
 				margin-bottom: 1.5em;
 				margin-left: -1.5em;
 				margin-top: -1.5em;
-				width: calc(100% + 3em);
 			}
 
 		}
@@ -3120,7 +3119,6 @@ input, select, textarea {
 				margin-bottom: 1.5em;
 				margin-left: -1.5em;
 				margin-top: -1.5em;
-				width: calc(100% + 3em);
 			}
 
 		}
