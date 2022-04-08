@@ -3968,7 +3968,7 @@ input, select, textarea {
 			.wrapper.spotlight .image {
 				border-radius: 100%;
 				margin: 0 2em 2em 0;
-				width: 24em;
+				width: 22em;
 				overflow: hidden;
 				-ms-flex: 1;
 			}
@@ -4160,7 +4160,7 @@ input, select, textarea {
 			.wrapper.spotlight .image {
 				margin: 0 0 1em 0 !important;
 				max-width: 85%;
-				width: 19em;
+				width: 14em;
 			}
 			.wrapper.spotlight .content {
 				text-align: center;
@@ -4177,7 +4177,7 @@ input, select, textarea {
 				.wrapper.spotlight .image {
 					margin: 0 0 1em 0 !important;
 					max-width: 85%;
-					width: 16em;
+					width: 12em;
 				}
 
 			}
