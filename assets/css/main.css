@@ -99,12 +99,9 @@ input, select, textarea {
 	body {
 		background-color: #2e3141;
 		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.4), rgba(46, 49, 65, 0.4)), url("../images/stock/pic06.jpg");
-		background-size: auto,
- cover;
-		background-attachment: fixed,
- fixed;
-		background-position: center,
- center;
+		background-size: auto, cover;
+		background-attachment: fixed, fixed;
+		background-position: center, center;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -3053,90 +3050,107 @@ input, select, textarea {
 
 /* Features */
 
-	.features {
-		display: -moz-flex;
-		display: -webkit-flex;
-		display: -ms-flex;
-		display: flex;
-		-moz-flex-wrap: wrap;
-		-webkit-flex-wrap: wrap;
-		-ms-flex-wrap: wrap;
-		flex-wrap: wrap;
-		margin: 0 0 2em 0;
+.features, .features .project-category {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+	justify-content: space-evenly;
+}
+
+.features .project-category {
+	border: 1px solid #ccc;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+.category-title {
+	font-size: 1.5em;
+	margin-bottom: 10px;
+	width: 100%;
+	text-align: center;
+}
+
+.features article, .features .project-category article {
+	padding: 1.75em 1.75em .1em 1.75em;
+	background-color: #353849;
+	border-radius: 5px;
+	flex: 1 1 calc(50% - 1.5em);
+}
+
+.features article {
+	margin: 1.5em 3em 1.5em 0em;
+}
+
+.features .project-category article {
+	margin: 1.5em 0em 1.5em 0em;
+}
+
+.features article:nth-child(2n) {
+	margin-right: 0em;
+}
+
+.features .project-category article:nth-child(2n) {
+	margin-right: 1em;
+	margin-left: 0em;
+}
+
+.features article .image, .features .project-category article .image {
+	display: block;
+	position: relative;
+	object-fit: cover;
+}
+
+.features article .image img, .features .project-category article .image img {
+	margin-bottom: 10px;
+	width: 100%;
+	height: 280px;
+}
+
+@media screen and (max-width: 980px) {
+	.features article {
+		padding: 1.5em 1.5em 0.1em 1.5em ;
+		width: calc(50% - 2em);
 	}
 
-		.features article {
-			padding: 1.75em 1.75em 0.1em 1.75em ;
-			background-color: #353849;
-			border-radius: 5px;
-			margin: 1.5em 3em 1.5em 0;
-			width: calc(50% - 1.5em);
-		}
+	.features .project-category article {
+		padding: 1.5em 1.5em 0.1em 1.5em ;
+		width: calc(50% - 2em);
+		margin-left: 1em;
 
-			.features article:nth-child(2n) {
-				margin-right: 0;
-			}
+	}
 
-			.features article .image {
-				display: block;
-				position: relative;
-				object-fit: cover;
-			}
+	.features article .image, .features .project-category article .image {
+		margin-bottom: 1.5em;
+		margin-left: -1.5em;
+		margin-top: -1.5em;
+		width: calc(100% + 3em);
+	}
+}
 
-				.features article .image img {
-					margin-bottom: 10px;
-					width: 100%;
-					height: 280px;
-				}
+@media screen and (max-width: 736px) {
+	.features article, .features .project-category article {
+		padding: 1.5em 1.5em 0.1em 1.5em ;
+		width: calc(50% - 0.875em - 1px);
+	}
 
-		@media screen and (max-width: 980px) {
-
-			.features article {
-				margin: 1em 2em 1em 0;
-				padding: 1.5em 1.5em 0.1em 1.5em ;
-
-				width: calc(50% - 1em);
-			}
-			.features article .image {
-				margin-bottom: 1.5em;
-				margin-left: -1.5em;
-				margin-top: -1.5em;
-				width: calc(100% + 3em);
-			}
-
-		}
-
-
-
-		@media screen and (max-width: 736px) {
-
-			.features article {
-				padding: 1.5em 1.5em 0.1em 1.5em ;
-				margin: 0.875em 1.75em 0.875em 0;
-				width: calc(50% - 0.875em - 1px);
-			}
-
-			.features article .image {
-				margin-bottom: 1.5em;
-				margin-left: -1.5em;
-				margin-top: -1.5em;
-				width: calc(100% + 3em);
-			}
-
-		}
+	.features article .image, .features .project-category article .image {
+		margin-bottom: 1.5em;
+		margin-left: -1.5em;
+		margin-top: -1.5em;
+		width: calc(100% + 3em);
+	}
+}
 
 @media screen and (max-width: 600px) {
+	.features, .features .project-category{
+		display: block;
+	}
 
-			.features {
-				display: block;
-			}
-
-				.features article {
-					width: 100%;
-					margin: 0 0 2em 0 !important;
-				}
-
-		}
+	.features article, .features .project-category article {
+		width: 100%;
+		margin: 0 0 2em 0 !important;
+	}
+}
 
 /* Header */
 
@@ -4095,7 +4109,7 @@ input, select, textarea {
 				}
 
 				.wrapper .inner {
-					padding: 5em 3em 2em 3em ;
+					padding: 2em 3em 2em 3em ;
 					width: 100%;
 				}
 
@@ -4130,7 +4144,7 @@ input, select, textarea {
 				}
 
 				.wrapper .inner {
-					padding: 5em 2em 2em 2em ;
+					padding: 2em 2em 2em 2em ;
 				}
 
 				.wrapper.spotlight .inner {
