@@ -81,7 +81,7 @@
 	<section id="wrapper">
 		<header>
 			<div class="inner">
-				<h2>AI/ML Bias-Mitigation of Loan Approval Dataset</h2>
+				<h2>Loan Approval Dataset: Bias Mitigation for AI/ML Applications</h2>
 				<p>This project examined the impact of using biased data that could be used to train algorithms
 					associated with learning from credit-based data sets.
 					Industry-defined fairness metrics were used to assess whether bias was present in the data.
@@ -95,7 +95,18 @@
 			<div class="inner">
 				<h2>Background</h2>
 				<p>Banks earn major revenue from lending loans, but this activity also brings risk as borrowers might default on their loan. To mitigate this, banks are leveraging Artificial Intelligence (AI) and Machine Learning (ML) to help predict how likely a borrower is to repay a loan. While this approach can lead to higher returns, banks must be careful when utilizing AI & ML for credit approval decisions due to the presence of bias in training data.</p>
-				<p>For this project, I looked at the impact of using biased data that could be used to train algorithms associated with learning from credit-based data sets. I took a loan approval dataset and used industry-defined fairness metrics to assess whether bias was present in the data. I then applied bias-mitigating techniques to produce a dataset without bias.</p>
+				<p>For this project, I looked at the impact of using biased data that could be used to train
+					algorithms associated with learning from credit-based data sets.
+
+				<p>I selected a Loan Default Dataset from Kaggle uploaded by M YASSER H in 2022.
+				This dataset concerns credit card application decisions, and is interesting for AI & ML applications
+				because there's a good mix of attributes -- continuous, nominal with a narrow range of values,
+				and nominal with a wide range of values -- and it is subject to strong multi-collinearity & empty values.</p>
+
+				<p>Of particular interest to me was the fact that this dataset also contained several protected class variables.
+				I examined whether bias was present when looking at outcomes for 'rate_of_interest'
+				and 'status' associated with different values for 'age' and 'gender' protected clase variables.
+				I then applied bias-mitigating techniques to produce a dataset without bias.</p>
 				<p>Identifying and mitigating bias within training data is necessary for AI applications for several reasons:</p>
 				<ul>
 					<li>Fairness: Today, AI applications are increasingly being used to make decisions that have a significant impact on people's lives, such as hiring, loan approvals, and parole decisions. If these applications are biased, they can unfairly discriminate against certain groups of people, leading to unjust outcomes.</li>
@@ -148,7 +159,7 @@
 
 
 					<div class="column right">
-						<p><img src="../../../../assets/images/mortgage_affordability/mortgage_amort.PNG" alt="Scene 3 Logic Bomb" title="Scene 3 Logic Bomb"></p>
+						<p><img src="../../../../assets/images/bias_mitigation/bias_identification2.png" alt="Scene 3" title="Scene 3"></p>
 					</div>
 				</div>
 
@@ -156,11 +167,13 @@
 				<div class="row">
 					<div class="column left">
 						<p><b>Mitigating the Bias:</b> The final stage of the project centered on bias mitigation. The Disparate Impact Remover (DIR) algorithm from the AIF360 toolkit was applied to the dataset, which works by adjusting the distributions of privileged and unprivileged groups for each feature to be more similar. The effectiveness of the bias mitigation process was then evaluated by calculating and comparing the fairness metrics before and after the mitigation. This comparison provided a clear visual representation of the reduction in bias, demonstrating the impact of the mitigation process.</p>
+						<p>The transformed dataset mitigated bias for the 'derived_interest' column concerning both 'derived_age' and 'gender' - exactly as anticipated! One step closer to using this dataset for AI training.</p>
+
 					</div>
 
 
 					<div class="column right">
-						<p><img src="../../../../assets/images/mortgage_affordability/mortgage_amort.PNG" alt="Scene 3 Logic Bomb" title="Scene 3 Logic Bomb"></p>
+						<p><img src="../../../../assets/images/bias_mitigation/bias_mitigation.PNG" alt="Scene 3" title="Scene 3"></p>
 					</div>
 				</div>
 
