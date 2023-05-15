@@ -1,0 +1,168 @@
+<!DOCTYPE HTML>
+<html lang="e">
+<head>
+	<title>Michael Baer: Projects</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="../../../../assets/css/main.css" />
+	<noscript><link rel="stylesheet" href="../../../../assets/css/noscript.css" /></noscript>
+
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+		img {
+			max-width: 100%;
+			height: auto;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		/* Create two equal columns that floats next to each other */
+		.column {
+			float: left;
+		}
+		.left {
+			width: 50%;
+		}
+
+		.right {
+			width: 50%;
+		}
+
+		/* Clear floats after the columns */
+		.row:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+		/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
+
+		@media screen and (max-width: 736px) {
+			.column {
+				width: 100%;
+			}
+			img {
+				max-height: 242px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+	</style>
+</head>
+
+<body class="is-preload">
+<!-- Page Wrapper -->
+<div id="page-wrapper">
+	<!-- Header -->
+	<header id="header">
+		<h1><a href="../../../../index.html">Home</a></h1>
+		<nav>
+			<a href="#menu">Menu</a>
+		</nav>
+	</header>
+
+	<!-- Menu -->
+	<nav id="menu">
+		<div class="inner">
+			<h2>Menu</h2>
+			<ul class="links">
+				<li><a href="../../../../index.html">Home</a></li>
+				<li><a href="../../../resume/resume.html">Resume</a></li>
+				<li><a href="../../view_all.html">Projects</a></li>
+			</ul>
+			<a href="#" class="close">Close</a>
+		</div>
+	</nav>
+
+	<!-- Wrapper -->
+	<section id="wrapper">
+		<header>
+			<div class="inner">
+				<h2>Java Programming: Mortgage Affordability</h2>
+				<p>This program walks a user through a budgeting exercise to determine a mortgage amount they can reasonably afford. Program crawls web for current mortgage rates, then considers lending best practices to determine affordability.</p>
+
+			</div>
+		</header>
+
+		<!-- Content -->
+		<div class="wrapper">
+			<div class="inner">
+				<h2>Background</h2>
+				<p>The increasing complexity of financial markets and the myriad of choices available have made financial decision-making, particularly concerning mortgages, a daunting task for many individuals. With fluctuations in mortgage rates and diverse lending practices, potential homeowners often find it challenging to accurately assess the mortgage amount they can comfortably afford. This program is designed to alleviate this difficulty by offering an intelligent, automated, and personalized budgeting solution.
+				</p>
+				<p>This program leverages the power of web crawling to gather up-to-date mortgage rates, providing users with real-time, accurate data. By integrating these rates with established lending best practices, it offers users a comprehensive overview of their mortgage affordability. Through this process, the program empowers individuals to make informed decisions, thereby promoting financial literacy and responsible homeownership.
+				</p>
+				<p>In essence, this program serves as a practical tool for prospective homeowners, financial advisors, and anyone seeking to understand and navigate the mortgage landscape with greater confidence and ease. It brings transparency and simplicity to the often complex process of mortgage planning, thus becoming an indispensable part of the financial decision-making process.
+				</p>
+				<h2>Implementation</h2>
+				<p>The Mortgage Affordability App is a sophisticated software system that, given a user's financial data and web-crawled mortgage rates, can provide an accurate estimate of the mortgage amount a user can afford. The application also integrates established lending best practices to provide a comprehensive and realistic evaluation.</p>
+				<h4>Role</h4>
+				<ul>
+					<li><b>Software Developer:</b> Responsible for designing the software architecture, implementing features, conducting tests, and verifying and validating the application's requirements.</li>
+				</ul>
+
+				<h4>Key Activities/Deliverables & Key Features</h4>
+				<ul>
+					<li><b>User-Friendly Interface:</b> The application features a simple, intuitive user interface that makes it easy for users to input their data and understand the results.</li>
+					<li><b>Budget Analyzer:</b> Programmed a budget analyzer module to analyze the user's financial data and calculate an affordable mortgage amount.</li>
+					<li><b>Web Crawler:</b> Developed a web crawler to gather real-time data on current mortgage rates from various financial institutions.</li>
+					<li><b>Personalized Analysis:</b> The application offers a personalized mortgage affordability analysis based on the user's financial data and current mortgage rates.</li>
+					<li><b>Financial Literacy:</b> The application integrates established lending best practices to promote financial literacy and empower users to make informed decisions.</li>
+					<li><b>Data Privacy:</b> Ensures high-level data privacy and security, with users' financial data being locally processed and not stored in any databases.</li>
+				</ul>
+				<h4>Logic Bomb Demonstration: Scene 3</h4>
+
+				<div class="row">
+					<div class="column left">
+						<p>The first step of the application involves an in-depth budgeting exercise and affordability analysis. Users input their financial data, including income, expenses, and savings, into the application. The application then uses this data to assess the user's financial health and calculate a mortgage amount they can comfortably afford. This is achieved by considering their budget and current mortgage rates, which the program gathers via a web crawler from various financial institutions.</p>					</div>
+
+
+					<div class="column right">
+						<p><img src="../../../../assets/images/mortgage_affordability/budget_analysis.PNG" alt="Scene 3" title="Scene 3"></p>
+					</div>
+				</div>
+
+
+				<div class="row">
+					<div class="column left">
+						<p>After the budgeting exercise and affordability analysis, the second step of the application generates a personalized affordability output. This includes a text file that contains an amortization table. The table breaks down the mortgage payments over time, showing the principal and interest components of each payment. This comprehensive information provides users with a detailed understanding of their potential mortgage payments, enabling them to make informed decisions regarding their home purchase.</p>
+					</div>
+
+
+					<div class="column right">
+						<p><img src="../../../../assets/images/mortgage_affordability/mortgage_amort.PNG" alt="Scene 3 Logic Bomb" title="Scene 3 Logic Bomb"></p>
+					</div>
+				</div>
+
+				<p>The program code can be found on my <a href="https://github.com/mbbaer/mortgage_affordability" target="_blank">GitHub page</a>.</p>
+
+
+			</div>
+		</div>
+
+	</section>
+
+
+
+	<!-- Footer -->
+	<section id="footer">
+		<div class="inner">
+			<ul class="copyright">
+				<li>&copy; Michael Baer. All rights reserved.</li>
+			</ul>
+		</div>
+	</section>
+</div>
+
+<!-- Scripts -->
+<script src="../../../../assets/js/jquery.min.js"></script>
+<script src="../../../../assets/js/jquery.scrollex.min.js"></script>
+<script src="../../../../assets/js/browser.min.js"></script>
+<script src="../../../../assets/js/breakpoints.min.js"></script>
+<script src="../../../../assets/js/util.js"></script>
+<script src="../../../../assets/js/main.js"></script>
+</body>
+</html>
