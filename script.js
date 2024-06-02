@@ -2,11 +2,17 @@
 function sendmail(event) {
     event.preventDefault(); // Prevent form from submitting
 
+    // Check if the form is valid
+    var form = document.getElementById('contact-form');
+    if (!form.checkValidity()) {
+        form.reportValidity(); // This will show validation error messages
+        return;
+    }
     (function() {
         emailjs.init('KauTV5i-77GDjJPQV');
     })();
 
-    var values22 = {
+    var templateVars = {
         from_name: document.getElementById("fullname").value,
         email_id: document.getElementById("email_id").value,
         mobile_num: document.getElementById("mobile_num").value,
@@ -15,7 +21,7 @@ function sendmail(event) {
 
     };
 
-    emailjs.sendForm('service_su55z8m', 'template_iwoa00q', values22)
+    emailjs.send('service_su55z8m', 'template_ygl2yd9', templateVars)
         .then(function(res) {
             alert("Send successfully");
         }, function(error) {
