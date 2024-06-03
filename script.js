@@ -85,10 +85,18 @@ var swiper = new Swiper(".mySwiper", {
 
 // Dark light mode toggle
 let darkModeIcon = document.querySelector('#darkMode-icon');
+let logoImage = document.querySelector('.logo img');
 
 darkModeIcon.onclick = () => {
     darkModeIcon.classList.toggle('bx-sun');
     document.body.classList.toggle('dark-mode');
+
+    // Change the logo image based on the dark mode state
+    if (document.body.classList.contains('dark-mode')) {
+        logoImage.src = 'images/logo/logo_white-min.png';
+    } else {
+        logoImage.src = 'images/logo/logo_black-min.png';
+    }
 };
 
 // Scroll reveal initialization

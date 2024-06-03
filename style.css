@@ -30,6 +30,19 @@
     --shadow-color: rgba(0, 0, 0, .7);
 }
 
+/* Dark mode for navbar links */
+.dark-mode .header.sticky .navbar a {
+    color: #f5f6f7;
+}
+
+.dark-mode .navbar a {
+    color: #f5f6f7;
+}
+
+.dark-mode #darkMode-icon {
+    color: #f5f6f7;
+}
+
 html {
     font-size: 62.5%;
     overflow-x: hidden;
@@ -850,6 +863,10 @@ span {
 
 
 @media (max-width: 768px) {
+    .header {
+        padding: 1.5rem 3%;
+    }
+
     #menu-icon {
         display: block;
     }
