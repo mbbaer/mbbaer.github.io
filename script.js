@@ -108,12 +108,14 @@ ScrollReveal().reveal('.home-content h3, .home-content p, .about-content', { ori
 // Define the skills and their corresponding icons
 const skills = [
     {name: "Python", icon: "fab fa-python"},
-    {name: "A.I. / M.L.", icon: "fas fa-brain"},
+    {name: "Java", icon: "fab fa-java"},
     {name: "SQL", icon: "fas fa-database"},
+    {name: "A.I. / M.L.", icon: "fas fa-brain"},
+    {name: "AWS", icon: "fab fa-aws"},
+    {name: "GitHub", icon: "fab fa-github"},
     {name: "HTML5", icon: "fab fa-html5"},
     {name: "CSS3", icon: "fab fa-css3-alt"},
     {name: "JavaScript", icon: "fab fa-js"},
-    {name: "AWS", icon: "fab fa-aws"},
 ];
 
 // Function to create the skills section
