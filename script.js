@@ -117,9 +117,10 @@ ScrollReveal().reveal('.home-content h3, .home-content p, .about-content', { ori
 const skills = [
     {name: "Python", icon: "fab fa-python"},
     {name: "Java", icon: "fab fa-java"},
-    {name: "SQL", icon: "fas fa-database"},
+    {name: "SQL", icon: "bx bxl-postgresql"},
     {name: "A.I. / M.L.", icon: "fas fa-brain"},
     {name: "AWS", icon: "fab fa-aws"},
+    {name: "Android", icon: "fab fa-android"},
     {name: "GitHub", icon: "fab fa-github"},
     {name: "HTML5", icon: "fab fa-html5"},
     {name: "CSS3", icon: "fab fa-css3-alt"},
