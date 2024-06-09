@@ -134,6 +134,16 @@ img {
     opacity: .9;
 }
 
+/* Remove underline on navbar links for the project page */
+.header-project .navbar a {
+    text-decoration: none; /* Removes the underline */
+}
+
+.header-project .navbar a:hover,
+.header-project .navbar a.active {
+    text-decoration: none; /* Ensures underline is also removed on hover and active states */
+}
+
 #menu-icon {
     font-size: 3.6rem;
     color: var(--text-color);
@@ -491,6 +501,15 @@ span {
     transition: color 0.3s ease;
 }
 
+.skill img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    color: #303336;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
 .skill p {
     font-size: 1.8rem; /* Increase the font size for the paragraph text */
 }
@@ -500,16 +519,16 @@ span {
     color: #808a92; /* Change color on hover */
 }
 
-.skill:hover i {
+.skill:hover i, .skill:hover img {
     color: #808a92; /* Change icon color on hover */
 }
 
 /* Dark mode specific styles */
-.dark-mode .skill i {
+.dark-mode .skill i, .dark-mode .skill img {
     color: var(--text-color);
 }
 
-.dark-mode .skill:hover i {
+.dark-mode .skill:hover i, .dark-mode .skill:hover img {
     color: #808a92; /* Change icon color on hover */
 }
 

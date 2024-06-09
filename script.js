@@ -61,12 +61,13 @@ window.onscroll = () => {
 
     // Sticky navbar
     let header = document.querySelector('.header');
-    header.classList.toggle('sticky', window.scrollY > 100);
+    header.classList.toggle('sticky', window.scrollY > 0);
 
     // Remove menu icon navbar when click navbar link (scroll)
     menuIcon.classList.remove('bx-x');
     navbar.classList.remove('active');
 };
+
 
 // Swiper initialization
 var swiper = new Swiper(".mySwiper", {
@@ -114,8 +115,8 @@ ScrollReveal().reveal('.home-content h1, .about-img img', { origin: 'left' });
 ScrollReveal().reveal('.home-content h3, .home-content p, .about-content', { origin: 'right' });
 
 
-// Define the skills and their corresponding icons
-const skills = [
+// Define the skills and their corresponding icons for the index page
+const indexSkills = [
     {name: "Python", icon: "fab fa-python"},
     {name: "Java", icon: "fab fa-java"},
     {name: "SQL", icon: "bx bxl-postgresql"},
@@ -128,8 +129,18 @@ const skills = [
     {name: "JavaScript", icon: "fab fa-js"},
 ];
 
+// Define the skills and their corresponding icons for the project page
+const projectSkills = [
+    {name: "Python", icon: "fab fa-python"},
+    {name: "Pandas", icon: "/images/Pandas.png"},
+    {name: "Numpy", icon: "/images/NumPy.png"},
+    {name: "Scikit-learn", icon: "/images/scikit-learn.png"},
+    {name: "Matplotlib", icon: "/images/Matplotlib.png"},
+    {name: "Jupyter Notebook", icon: "/images/Jupyter.png"},
+];
+
 // Function to create the skills section
-function createSkillsSection() {
+function createSkillsSection(skills) {
     const skillsContainer = document.querySelector(".skills-container");
 
     skills.forEach(skill => {
@@ -137,9 +148,19 @@ function createSkillsSection() {
         const skillDiv = document.createElement("div");
         skillDiv.classList.add("skill");
 
-        // Create the icon element
-        const iconElement = document.createElement("i");
-        iconElement.className = skill.icon;
+        let iconElement;
+
+        // Check if the icon is a URL (image) or an icon class
+        if (skill.icon.endsWith('.png') || skill.icon.endsWith('.jpg') || skill.icon.endsWith('.jpeg') || skill.icon.endsWith('.svg')) {
+            // Create an img element for image icons
+            iconElement = document.createElement("img");
+            iconElement.src = skill.icon;
+            iconElement.alt = skill.name;
+        } else {
+            // Create an i element for icon class
+            iconElement = document.createElement("i");
+            iconElement.className = skill.icon;
+        }
 
         // Create the skill name element
         const skillName = document.createElement("p");
@@ -154,5 +175,11 @@ function createSkillsSection() {
     });
 }
 
-// Call the function to create the skills section
-createSkillsSection();
+// Check which page is loaded and call the appropriate function
+window.onload = () => {
+    if (window.location.pathname.includes('index.html')) {
+        createSkillsSection(indexSkills);
+    } else if (window.location.pathname.includes('/pages/bias_mitigation.html')) { // Replace 'project.html' with the actual project page filename
+        createSkillsSection(projectSkills);
+    }
+};
