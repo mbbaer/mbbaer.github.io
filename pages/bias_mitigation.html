@@ -94,12 +94,23 @@
     </div>
 </section>
 
-<!-- projects section design -->
 <section class="process" id="process">
     <h2 class="heading">The <span>Process</span></h2>
+    <div class="process-container">
+        <div class="process-step">
+            <h3>Data Preprocessing</h3>
+            <p>The project kicked off with a thorough preprocessing phase where the raw dataset was transformed to be suitable for further analysis. This crucial step comprised managing missing data and grouping protected class variables into distinct subcategories. These preprocessing tasks were accomplished using powerful data manipulation libraries in Python, such as pandas and numpy, to shape the data into a format ready for insightful analysis.</p>
+        </div>
+        <div class="process-step">
+            <h3>Bias Detection</h3>
+            <p>After preprocessing, the project focused on bias detection. Using fairness metrics such as Statistical Parity Difference (SPD) and Disparate Impact (DI), the dataset was scrutinized for potential biases in relation to protected attributes like gender and age. These metrics were calculated using the AI Fairness 360 (AIF360) toolkit, a comprehensive library designed to help users examine, report, and mitigate discrimination and bias in machine learning models.</p>
+        </div>
+        <div class="process-step">
+            <h3>Bias Mitigation</h3>
+            <p>The final stage of the project centered on bias mitigation. The Disparate Impact Remover (DIR) algorithm from the AIF360 toolkit was applied to the dataset, which works by adjusting the distributions of privileged and unprivileged groups for each feature to be more similar. The effectiveness of the bias mitigation process was then evaluated by calculating and comparing the fairness metrics before and after mitigation, demonstrating the impact of the mitigation process.</p>
+        </div>
+    </div>
 </section>
-
-
 
 <!-- footer design -->
 <footer class="footer">

@@ -132,11 +132,11 @@ const indexSkills = [
 // Define the skills and their corresponding icons for the project page
 const projectSkills = [
     {name: "Python", icon: "fab fa-python"},
-    {name: "Pandas", icon: "/images/Pandas.png"},
-    {name: "Numpy", icon: "/images/NumPy.png"},
-    {name: "Scikit-learn", icon: "/images/scikit-learn.png"},
-    {name: "Matplotlib", icon: "/images/Matplotlib.png"},
-    {name: "Jupyter Notebook", icon: "/images/Jupyter.png"},
+    {name: "Pandas", icon: "/images/icons/Pandas.png"},
+    {name: "Numpy", icon: "/images/icons/NumPy.png"},
+    {name: "Scikit-learn", icon: "/images/icons/scikit-learn.png"},
+    {name: "Matplotlib", icon: "/images/icons/Matplotlib.png"},
+    {name: "Jupyter Notebook", icon: "/images/icons/Jupyter.png"},
 ];
 
 // Function to create the skills section
