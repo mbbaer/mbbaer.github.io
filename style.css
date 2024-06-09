@@ -366,6 +366,30 @@ span {
     margin: 2rem 0 3rem;
 }
 
+.about-content .social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
+    box-shadow: 0 .2rem .5rem var(--shadow-color);
+    font-size: 2rem;
+    color: var(--main-color);
+    margin: 0 1.5rem 3rem 0;
+    transition: .5s ease;
+}
+
+.about-content .social-media a:hover {
+    background: var(--main-color);
+    color: var(--white-color);
+}
+
+
+
+
 
 
 
@@ -1042,5 +1066,4 @@ span {
         text-align: center;
         margin-top: 2rem;
     }
-
 }
