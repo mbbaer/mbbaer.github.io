@@ -365,6 +365,7 @@ span {
 .about-content h2 {
     text-align: left;
     line-height: 1.2;
+    padding-bottom: 1rem;
 }
 
 .about-content h3 {
@@ -547,8 +548,6 @@ span {
     justify-content: center;
     align-items: stretch; /* Ensures all boxes stretch to the same height */
     flex-wrap: wrap;
-    gap: 2rem;
-
 }
 
 
@@ -562,20 +561,16 @@ span {
 }
 
 .process-container .process-step:hover {
-    box-shadow: 0 .1rem 2rem var(--shadow-color);
     transform: scale(1.02);
 }
 
-.process-step i {
-    font-size: 7rem;
-    color: var(--main-color);
-}
 
 .process-step img {
     width: 40%;
     border-radius: 20px;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
 }
+
+
 
 .process-step h3 {
     font-size: 2.6rem;
@@ -1060,6 +1055,31 @@ span {
 
     .skill p {
         font-size: 1.8rem; /* Adjust the font size for smaller screens */
+    }
+
+
+    .process-container {
+        flex-direction: column; /* Stack process steps vertically */
+    }
+
+    .process-step {
+        flex-direction: column; /* Stack content within each step vertically */
+        align-items: flex-start; /* Align items to the start */
+        gap: 0;
+    }
+
+    .process-step img {
+        width: 100%; /* Make the image full width */
+        order: 2;
+        margin-bottom: 2rem;
+    }
+
+    .process-step h3 {
+        font-size: 2rem; /* Adjust heading size for smaller screens */
+    }
+
+    .process-step p {
+        font-size: 1.6rem; /* Adjust paragraph size for smaller screens */
     }
 
     .reviews-container .reviews-wrapper {
