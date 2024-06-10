@@ -534,6 +534,65 @@ span {
 
 
 
+.process {
+    min-height: auto;
+}
+
+.process h2 {
+    margin-bottom: 5rem;
+}
+
+.process-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch; /* Ensures all boxes stretch to the same height */
+    flex-wrap: wrap;
+    gap: 2rem;
+
+}
+
+
+.process-step {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    margin-bottom: 4rem;
+    transition: .5s ease;
+
+}
+
+.process-container .process-step:hover {
+    box-shadow: 0 .1rem 2rem var(--shadow-color);
+    transform: scale(1.02);
+}
+
+.process-step i {
+    font-size: 7rem;
+    color: var(--main-color);
+}
+
+.process-step img {
+    width: 40%;
+    border-radius: 20px;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
+}
+
+.process-step h3 {
+    font-size: 2.6rem;
+    transition: .5s ease;
+}
+
+.process-step:hover h3 {
+    color: var(--main-color);
+}
+
+.process-step p {
+    font-size: 1.8rem;
+    margin: 1rem 0 3rem;
+    flex-grow: 1; /* Ensures the paragraph grows to fill the available space */
+}
+
+
 
 
 .projects {

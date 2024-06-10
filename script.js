@@ -110,7 +110,7 @@ ScrollReveal({
 });
 
 ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
-ScrollReveal().reveal('.home-img img, .services-container, .projects-box, .reviews-wrapper, .skills-container, .contact form', { origin: 'bottom' });
+ScrollReveal().reveal('.home-img img, .services-container, .projects-box, .reviews-wrapper, .process-container, .skills-container, .contact form', { origin: 'bottom' });
 ScrollReveal().reveal('.home-content h1, .about-img img', { origin: 'left' });
 ScrollReveal().reveal('.home-content h3, .home-content p, .about-content', { origin: 'right' });
 
@@ -131,7 +131,7 @@ const indexSkills = [
 
 // Define the skills and their corresponding icons for the project page
 const projectSkills = [
-    {name: "Python", icon: "fab fa-python"},
+    {name: "Python", icon: "/images/icons/Python.png"},
     {name: "Pandas", icon: "/images/icons/Pandas.png"},
     {name: "Numpy", icon: "/images/icons/NumPy.png"},
     {name: "Scikit-learn", icon: "/images/icons/scikit-learn.png"},
