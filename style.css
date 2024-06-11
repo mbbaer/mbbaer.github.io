@@ -134,6 +134,16 @@ img {
     opacity: .9;
 }
 
+/* Remove underline on navbar links for the project page */
+.header-project .navbar a {
+    text-decoration: none; /* Removes the underline */
+}
+
+.header-project .navbar a:hover,
+.header-project .navbar a.active {
+    text-decoration: none; /* Ensures underline is also removed on hover and active states */
+}
+
 #menu-icon {
     font-size: 3.6rem;
     color: var(--text-color);
@@ -355,6 +365,7 @@ span {
 .about-content h2 {
     text-align: left;
     line-height: 1.2;
+    padding-bottom: 1rem;
 }
 
 .about-content h3 {
@@ -365,6 +376,30 @@ span {
     font-size: 1.8rem;
     margin: 2rem 0 3rem;
 }
+
+.about-content .social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
+    box-shadow: 0 .2rem .5rem var(--shadow-color);
+    font-size: 2rem;
+    color: var(--main-color);
+    margin: 0 1.5rem 3rem 0;
+    transition: .5s ease;
+}
+
+.about-content .social-media a:hover {
+    background: var(--main-color);
+    color: var(--white-color);
+}
+
+
+
 
 
 
@@ -467,6 +502,15 @@ span {
     transition: color 0.3s ease;
 }
 
+.skill img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    color: #303336;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
 .skill p {
     font-size: 1.8rem; /* Increase the font size for the paragraph text */
 }
@@ -476,19 +520,80 @@ span {
     color: #808a92; /* Change color on hover */
 }
 
-.skill:hover i {
+.skill:hover i, .skill:hover img {
     color: #808a92; /* Change icon color on hover */
 }
 
 /* Dark mode specific styles */
-.dark-mode .skill i {
+.dark-mode .skill i, .dark-mode .skill img {
     color: var(--text-color);
 }
 
-.dark-mode .skill:hover i {
+.dark-mode .skill:hover i, .dark-mode .skill:hover img {
     color: #808a92; /* Change icon color on hover */
 }
 
+
+
+.process {
+    min-height: auto;
+}
+
+.process h2 {
+    margin-bottom: 5rem;
+}
+
+.process h3 {
+    font-size: 1.8rem;
+    margin: 1rem 0 3rem;
+    font-weight: normal;
+    text-align: left;
+}
+
+.process-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch; /* Ensures all boxes stretch to the same height */
+    flex-wrap: wrap;
+}
+
+
+.process-step {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    margin-bottom: 4rem;
+    transition: .5s ease;
+
+}
+
+.process-container .process-step:hover {
+    transform: scale(1.02);
+}
+
+
+.process-step img {
+    width: 40%;
+    border-radius: 20px;
+}
+
+
+
+.process-step h3 {
+    font-size: 2.6rem;
+    transition: .5s ease;
+    font-weight: bold;
+}
+
+.process-step:hover h3 {
+    color: var(--main-color);
+}
+
+.process-step p {
+    font-size: 1.8rem;
+    margin: 1rem 0 0;
+    flex-grow: 1; /* Ensures the paragraph grows to fill the available space */
+}
 
 
 
@@ -960,6 +1065,32 @@ span {
         font-size: 1.8rem; /* Adjust the font size for smaller screens */
     }
 
+
+    .process-container {
+        flex-direction: column; /* Stack process steps vertically */
+    }
+
+    .process-step {
+        flex-direction: column; /* Stack content within each step vertically */
+        align-items: flex-start; /* Align items to the start */
+        gap: 0;
+    }
+
+    .process-step img {
+        width: 100%; /* Make the image full width */
+        order: 2;
+    }
+
+    .process-step h3 {
+        font-size: 2rem; /* Adjust heading size for smaller screens */
+        margin: 1rem 0 1rem;
+    }
+
+    .process-step p {
+        font-size: 1.6rem; /* Adjust paragraph size for smaller screens */
+        margin-bottom: 2rem;
+    }
+
     .reviews-container .reviews-wrapper {
         padding: 5rem 0;
     }
@@ -1042,5 +1173,4 @@ span {
         text-align: center;
         margin-top: 2rem;
     }
-
 }

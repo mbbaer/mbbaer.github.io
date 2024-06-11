@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" class="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mike Baer | Website</title>
+
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+
+    <!-- box icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+    <!-- tech icons -->
+    <link rel="stylesheet" href="https://techicons.dev/icons.css">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="../style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <!-- Other head elements -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body class="" style="height: 100%;">
+
+<!-- header design -->
+<header class="header header-project">
+    <a href="#" class="logo"><img src="../images/logo/logo_black-min.png" alt="Logo"></a>
+    <nav class="navbar">
+        <a style="font-weight: bold;" href="#home" class=""></a>
+        <a style="font-weight: bold;" href="../index.html#home" class="">Home</a>
+        <a style="font-weight: bold;" href="../index.html#about" class="">About</a>
+        <a style="font-weight: bold;" href="../index.html#services" class="">Services</a>
+        <a style="font-weight: bold;" href="../index.html#projects" class="">Projects</a>
+        <a style="font-weight: bold;" href="../index.html#contact" class="">Contact</a>
+    </nav>
+    <div class="bx bx-moon" id="darkMode-icon"></div>
+    <div class="bx bx-menu" id="menu-icon"></div>
+</header>
+
+<!-- about section design -->
+<section class="about" id="home">
+    <div class="about-img">
+        <img src="../images/projects/bias_mitigation/bias_mitigation_grey.png" alt="">
+    </div>
+    <div class="about-content">
+        <h2 class="heading">Loan Approval <span><br>Bias Mitigation for AI/ML Applications</span></h2>
+        <h3>This project examined the impact of using biased data that could be used to train algorithms
+            associated with learning from credit-based data sets.
+        </h3>
+        <p>Industry-defined fairness metrics were used to assess whether bias was present in the data.
+            A bias-mitigating technique was then applied to produce a dataset without bias.</p>
+        <div class="social-media">
+            <a href="https://github.com/mbbaer/bias_mitigation" target="_blank"><i class="bx bxl-github"></i></a>
+        </div>
+    </div>
+
+</section>
+
+<!-- services section design -->
+<section class="services" id="outcomes">
+    <h2 class="heading">The <span>Outcomes</span></h2>
+    <div class="services-container">
+        <div class="services-box">
+            <i class="bx bx-group"></i>
+            <h3>Enhanced Fairness in <br>Loan Approvals</h3>
+            <p>The implementation of bias mitigation techniques resulted in a fairer loan approval process.
+                By addressing biases related to age and gender, the project ensured more equitable treatment of all applicants,
+                leading to increased trust and fairness in the decision-making process.</p>
+        </div>
+        <div class="services-box">
+            <i class="bx bx-line-chart"></i>
+            <h3>Improved Accuracy of <br>AI Models</h3>
+            <p>Through the application of bias detection and mitigation, the accuracy of AI models was significantly enhanced.
+                This improvement in model accuracy helped in making more reliable predictions,
+                ultimately reducing the risk of incorrect loan approvals and denials.</p>
+        </div>
+        <div class="services-box">
+            <i class="bx bx-shield-quarter"></i>
+            <h3>Strengthened Ethical <br>Compliance</h3>
+            <p>The project reinforced ethical standards by integrating fairness metrics into the data processing pipeline.
+                Ensuring that the AI models adhered to these ethical guidelines minimized discrimination,
+                promoting ethical AI usage and compliance with regulatory standards.</p>
+        </div>
+    </div>
+</section>
+
+
+<section id="tools" class="skills-section">
+    <h2 class="heading">The <span>Tools</span></h2>
+    <div class="skills-container">
+        <!-- Skills will be dynamically inserted here -->
+    </div>
+</section>
+
+<section class="process" id="process">
+    <h2 class="heading">The <span>Process</span></h2>
+    <div class="process-container">
+        <h3>Banks use AI and Machine Learning to predict whether borrowers will repay their loans,
+            but if the data is biased, it can lead to unfair decisions.
+            This project addresses the challenge of mitigating bias present in loan approval datasets.
+            The goal is to identify and reduce the bias, ensuring that AI-driven credit decisions are fair and trustworthy.
+        </h3>
+        <div class="process-step">
+            <div class="text-content">
+                <h3>Raw Data Collection and Preparation</h3>
+                    <p>The project began with gathering raw data and performing an initial data cleansing to make the data easier to work with.
+                    This includes standardizing the data, converting columns to the correct types, and removing unnecessary information.
+                    Clean data was crucial for accurate analysis and reliable results.
+                    <br><br>To address several missing values in the dataset, a method called KNNImputer is used for numerical data.
+                    This method estimates missing values based on similar entries, providing a more realistic and accurate way to handle gaps in the data.
+                    </p>
+            </div>
+            <img src="../images/projects/bias_mitigation/preprocessing1.PNG" alt="Data Cleansing">
+        </div>
+        <div class="process-step" style="display: flex; flex-direction: column;">
+            <div class="text-content">
+                <h3>Data Preprocessing</h3>
+                <p>Industry-standard fairness metrics were used to assess the dataset for bias.
+                    Specifically, metrics such as Statistical Parity Difference (SPD) and Disparate Impact (DI)
+                    were used to evaluate potential biases in relation to protected class attributes like gender and age.
+                    This step was essential to highlight potential biases in the data, ensuring that any discriminatory patterns were flagged for further processing.
+                    Upon detecting bias, a pre-processing algorithm was applied to mitigate discrimination across gender and age before splitting the data into training and testing sets.
+                </p>
+            </div>
+            <img src="../images/projects/bias_mitigation/bias_identification.png" alt="Bias Identification" style="width: 100%; max-width: 800px; height: auto;">
+        </div>
+        <div class="process-step">
+            <div class="text-content">
+                <h3>Training and Testing</h3>
+                <p>The training data underwent standard training and in-processing algorithms to enhance fairness during model training.
+                    The testing data was used to evaluate the model's performance, focusing on both accuracy and fairness metrics.
+                    This phase ensured that the AI models were trained to be both effective and equitable.</p>
+            </div>
+        </div>
+        <div class="process-step">
+            <img src="../images/projects/bias_mitigation/bias_mitigation_metrics.PNG" alt="Bias Mitigation">
+            <div class="text-content">
+                <h3>Post-processing Bias Mitigation and Model Evaluation</h3>
+                <p>Post-processing algorithms were applied to further reduce any remaining bias after model training.
+                    The Disparate Impact Remover (DIR) algorithm from the AI Fairness 360 (AIF360) toolkit was utilized to adjust the
+                    distributions of privileged and unprivileged groups for each feature to be more similar.
+                    The classifier's performance was assessed for both accuracy and fairness using classifier unit tests and dataset metrics.</p>
+            </div>
+        </div>
+        <div class="process-step">
+            <div class="text-content">
+                <h3>Deployment and Monitoring</h3>
+                <p>After ensuring the model met the required fairness and accuracy standards, it was ready for deployment.
+                    The model's performance and fairness were continuously monitored, with external interventions applied as necessary to reprocess and retrain the model to maintain fairness.
+                    This ongoing monitoring was crucial for ensuring the responsible use of AI in loan approvals.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- footer design -->
+<footer class="footer">
+    <div class="footer-text">
+        <p style="color: white;">Mike Baer © 2024 | All Rights Reserved.</p>
+    </div>
+    <div class="footer-iconTop">
+        <a href="#home"><i style="color: white;" class="bx bx-up-arrow-alt"></i></a>
+    </div>
+</footer>
+
+<!-- scroll reveal -->
+<script src="https://unpkg.com/scrollreveal"></script>
+<!-- swiper js -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<!-- custom js -->
+<script src="../script.js"></script>
+</body>
+</html>
