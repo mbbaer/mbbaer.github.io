@@ -130,7 +130,7 @@ const indexSkills = [
 ];
 
 // Define the skills and their corresponding icons for the project page
-const projectSkills = [
+const biasSkills = [
     {name: "Python", icon: "/images/icons/Python.png"},
     {name: "Pandas", icon: "/images/icons/Pandas.png"},
     {name: "Numpy", icon: "/images/icons/NumPy.png"},
@@ -177,9 +177,9 @@ function createSkillsSection(skills) {
 
 // Check which page is loaded and call the appropriate function
 window.onload = () => {
-    if (window.location.pathname.includes('index.html')) {
+    if (window.location.pathname.includes('/pages/bias_mitigation.html')) {
+        createSkillsSection(biasSkills);
+    } else {
         createSkillsSection(indexSkills);
-    } else if (window.location.pathname.includes('/pages/bias_mitigation.html')) { // Replace 'project.html' with the actual project page filename
-        createSkillsSection(projectSkills);
     }
 };
