@@ -45,7 +45,7 @@
         <img src="../images/projects/bias_mitigation/bias_mitigation_grey.png" alt="">
     </div>
     <div class="about-content">
-        <h2 class="heading">Loan Approval Dataset <span>Bias Mitigation for AI/ML Applications</span></h2>
+        <h2 class="heading">Loan Approval <span><br>Bias Mitigation for AI/ML Applications</span></h2>
         <h3>This project examined the impact of using biased data that could be used to train algorithms
             associated with learning from credit-based data sets.
         </h3>
@@ -97,40 +97,60 @@
 <section class="process" id="process">
     <h2 class="heading">The <span>Process</span></h2>
     <div class="process-container">
+        <h3>Banks use AI and Machine Learning to predict whether borrowers will repay their loans,
+            but if the data is biased, it can lead to unfair decisions.
+            This project addresses the challenge of mitigating bias present in loan approval datasets.
+            The goal is to identify and reduce the bias, ensuring that AI-driven credit decisions are fair and trustworthy.
+        </h3>
         <div class="process-step">
             <div class="text-content">
-                <h3>Raw Data Collection and Initial Discrimination Unit Testing</h3>
-                <p>The project began with gathering raw data and performing an initial discrimination data unit test to assess the presence of bias using dataset metrics. Specifically, metrics such as Statistical Parity Difference (SPD) and Disparate Impact (DI) were used to evaluate potential biases in relation to protected attributes like gender and age. This step was essential to highlight potential biases in the data, ensuring that any discriminatory patterns were flagged for further processing.</p>
+                <h3>Raw Data Collection and Preparation</h3>
+                    <p>The project began with gathering raw data and performing an initial data cleansing to make the data easier to work with.
+                    This includes standardizing the data, converting columns to the correct types, and removing unnecessary information.
+                    Clean data was crucial for accurate analysis and reliable results.
+                    <br><br>To address several missing values in the dataset, a method called KNNImputer is used for numerical data.
+                    This method estimates missing values based on similar entries, providing a more realistic and accurate way to handle gaps in the data.
+                    </p>
             </div>
-            <img src="../images/projects/bias_mitigation/bias_mitigation_grey.png" alt="Data Collection">
+            <img src="../images/projects/bias_mitigation/preprocessing1.PNG" alt="Data Cleansing">
         </div>
-        <div class="process-step">
-            <img src="../images/projects/bias_mitigation/bias_mitigation_grey.png" alt="Data Preprocessing">
+        <div class="process-step" style="display: flex; flex-direction: column;">
             <div class="text-content">
                 <h3>Data Preprocessing</h3>
-                <p>Upon detecting bias, a pre-processing algorithm was applied to mitigate discrimination before splitting the data into training and testing sets. This crucial step involved managing missing data and grouping protected class variables into distinct subcategories, transforming the raw dataset into a format suitable for further analysis. These preprocessing tasks were accomplished using powerful data manipulation libraries in Python, namely pandas and numpy.</p>
+                <p>Industry-standard fairness metrics were used to assess the dataset for bias.
+                    Specifically, metrics such as Statistical Parity Difference (SPD) and Disparate Impact (DI)
+                    were used to evaluate potential biases in relation to protected class attributes like gender and age.
+                    This step was essential to highlight potential biases in the data, ensuring that any discriminatory patterns were flagged for further processing.
+                    Upon detecting bias, a pre-processing algorithm was applied to mitigate discrimination across gender and age before splitting the data into training and testing sets.
+                </p>
             </div>
+            <img src="../images/projects/bias_mitigation/bias_identification.png" alt="Bias Identification" style="width: 100%; max-width: 800px; height: auto;">
         </div>
         <div class="process-step">
             <div class="text-content">
                 <h3>Training and Testing</h3>
-                <p>The training data underwent standard training and in-processing algorithms to enhance fairness during model training. The testing data was used to evaluate the model's performance, focusing on both accuracy and fairness metrics. This phase ensured that the AI models were trained to be both effective and equitable.</p>
+                <p>The training data underwent standard training and in-processing algorithms to enhance fairness during model training.
+                    The testing data was used to evaluate the model's performance, focusing on both accuracy and fairness metrics.
+                    This phase ensured that the AI models were trained to be both effective and equitable.</p>
             </div>
-            <img src="../images/projects/bias_mitigation/bias_mitigation_grey.png" alt="Training and Testing">
         </div>
         <div class="process-step">
-            <img src="../images/projects/bias_mitigation/bias_mitigation_grey.png" alt="Bias Mitigation">
+            <img src="../images/projects/bias_mitigation/bias_mitigation_metrics.PNG" alt="Bias Mitigation">
             <div class="text-content">
                 <h3>Post-processing Bias Mitigation and Model Evaluation</h3>
-                <p>Post-processing algorithms were applied to further reduce any remaining bias after model training. The Disparate Impact Remover (DIR) algorithm from the AI Fairness 360 (AIF360) toolkit was utilized to adjust the distributions of privileged and unprivileged groups for each feature to be more similar. The classifier's performance was continually assessed for both accuracy and fairness using classifier unit tests and dataset metrics.</p>
+                <p>Post-processing algorithms were applied to further reduce any remaining bias after model training.
+                    The Disparate Impact Remover (DIR) algorithm from the AI Fairness 360 (AIF360) toolkit was utilized to adjust the
+                    distributions of privileged and unprivileged groups for each feature to be more similar.
+                    The classifier's performance was assessed for both accuracy and fairness using classifier unit tests and dataset metrics.</p>
             </div>
         </div>
         <div class="process-step">
             <div class="text-content">
                 <h3>Deployment and Monitoring</h3>
-                <p>After ensuring the model met the required fairness and accuracy standards, it was deployed. The model's performance and fairness were continuously monitored, with external interventions applied as necessary to reprocess and retrain the model to maintain fairness. This ongoing monitoring was crucial for ensuring the responsible use of AI in loan approvals.</p>
+                <p>After ensuring the model met the required fairness and accuracy standards, it was ready for deployment.
+                    The model's performance and fairness were continuously monitored, with external interventions applied as necessary to reprocess and retrain the model to maintain fairness.
+                    This ongoing monitoring was crucial for ensuring the responsible use of AI in loan approvals.</p>
             </div>
-            <img src="../images/projects/bias_mitigation/bias_mitigation_grey.png" alt="Deployment and Monitoring">
         </div>
     </div>
 </section>

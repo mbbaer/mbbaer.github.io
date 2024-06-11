@@ -543,6 +543,13 @@ span {
     margin-bottom: 5rem;
 }
 
+.process h3 {
+    font-size: 1.8rem;
+    margin: 1rem 0 3rem;
+    font-weight: normal;
+    text-align: left;
+}
+
 .process-container {
     display: flex;
     justify-content: center;
@@ -575,6 +582,7 @@ span {
 .process-step h3 {
     font-size: 2.6rem;
     transition: .5s ease;
+    font-weight: bold;
 }
 
 .process-step:hover h3 {
@@ -583,7 +591,7 @@ span {
 
 .process-step p {
     font-size: 1.8rem;
-    margin: 1rem 0 3rem;
+    margin: 1rem 0 0;
     flex-grow: 1; /* Ensures the paragraph grows to fill the available space */
 }
 
@@ -1071,15 +1079,16 @@ span {
     .process-step img {
         width: 100%; /* Make the image full width */
         order: 2;
-        margin-bottom: 2rem;
     }
 
     .process-step h3 {
         font-size: 2rem; /* Adjust heading size for smaller screens */
+        margin: 1rem 0 1rem;
     }
 
     .process-step p {
         font-size: 1.6rem; /* Adjust paragraph size for smaller screens */
+        margin-bottom: 2rem;
     }
 
     .reviews-container .reviews-wrapper {
