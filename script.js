@@ -95,7 +95,11 @@ darkModeIcon.onclick = () => {
 
     // Change the logo image based on the dark mode state
     if (document.body.classList.contains('dark-mode')) {
-        logoImage.src = 'images/logo/logo_white-min.png';
+        if (window.location.pathname.includes('/pages')) {
+            logoImage.src = '../images/logo/logo_white-min.png';
+        } else {
+            logoImage.src = 'images/logo/logo_white-min.png';
+        }
     } else {
         logoImage.src = 'images/logo/logo_black-min.png';
     }
