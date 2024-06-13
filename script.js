@@ -124,16 +124,16 @@ const indexSkills = [
     {name: "Python", icon: "fab fa-python"},
     {name: "Java", icon: "fab fa-java"},
     {name: "SQL", icon: "bx bxl-postgresql"},
-    {name: "A.I. / M.L.", icon: "fas fa-brain"},
     {name: "AWS", icon: "fab fa-aws"},
     {name: "Android", icon: "fab fa-android"},
     {name: "GitHub", icon: "fab fa-github"},
+    {name: "Jira", icon: "/images/icons/Jira.png"},
     {name: "HTML5", icon: "fab fa-html5"},
     {name: "CSS3", icon: "fab fa-css3-alt"},
     {name: "JavaScript", icon: "fab fa-js"},
 ];
 
-// Define the skills and their corresponding icons for the project page
+// Define the skills and their corresponding icons for the project pages
 const biasSkills = [
     {name: "Python", icon: "/images/icons/Python.png"},
     {name: "Pandas", icon: "/images/icons/Pandas.png"},
@@ -141,6 +141,20 @@ const biasSkills = [
     {name: "Scikit-learn", icon: "/images/icons/scikit-learn.png"},
     {name: "Matplotlib", icon: "/images/icons/Matplotlib.png"},
     {name: "Jupyter Notebook", icon: "/images/icons/Jupyter.png"},
+];
+
+const mbsPoolingSkills = [
+    {name: "Python", icon: "/images/icons/Python.png"},
+    {name: "SQL", icon: "bx bxl-postgresql"},
+    {name: "AWS", icon: "fab fa-aws"},
+    {name: "Jenkins", icon: "/images/icons/Jenkins.png"},
+    {name: "GitHub", icon: "fab fa-github"},
+    {name: "Jira", icon: "/images/icons/Jira.png"},
+    {name: "HTML5", icon: "fab fa-html5"},
+    {name: "CSS3", icon: "fab fa-css3-alt"},
+    {name: "JavaScript", icon: "fab fa-js"},
+    {name: "Figma", icon: "/images/icons/Figma.png"},
+
 ];
 
 // Function to create the skills section
@@ -183,6 +197,8 @@ function createSkillsSection(skills) {
 window.onload = () => {
     if (window.location.pathname.includes('/pages/bias_mitigation.html')) {
         createSkillsSection(biasSkills);
+    } else if (window.location.pathname.includes('/pages/mbs_pooling.html')) {
+        createSkillsSection(mbsPoolingSkills);
     } else {
         createSkillsSection(indexSkills);
     }
