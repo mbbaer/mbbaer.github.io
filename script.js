@@ -121,16 +121,16 @@ ScrollReveal().reveal('.home-content h3, .home-content p, .about-content', { ori
 
 // Define the skills and their corresponding icons for the index page
 const indexSkills = [
-    {name: "Python", icon: "fab fa-python"},
-    {name: "Java", icon: "fab fa-java"},
-    {name: "SQL", icon: "bx bxl-postgresql"},
-    {name: "AWS", icon: "fab fa-aws"},
-    {name: "Android", icon: "fab fa-android"},
-    {name: "GitHub", icon: "fab fa-github"},
+    {name: "Python", icon: "/images/icons/Python.png"},
+    {name: "Java", icon: "/images/icons/Java.png"},
+    {name: "SQL", icon: "/images/icons/PostgresSQL.png"},
+    {name: "AWS", icon: "/images/icons/AWS.png"},
+    {name: "Android", icon: "/images/icons/Android.png"},
+    {name: "GitHub", icon: "/images/icons/GitHub.png"},
     {name: "Jira", icon: "/images/icons/Jira.png"},
-    {name: "HTML5", icon: "fab fa-html5"},
-    {name: "CSS3", icon: "fab fa-css3-alt"},
-    {name: "JavaScript", icon: "fab fa-js"},
+    {name: "HTML5", icon: "/images/icons/HTML5.png"},
+    {name: "CSS3", icon: "/images/icons/CSS3.png"},
+    {name: "JavaScript", icon: "/images/icons/JavaScript.png"},
 ];
 
 // Define the skills and their corresponding icons for the project pages
@@ -145,16 +145,25 @@ const biasSkills = [
 
 const mbsPoolingSkills = [
     {name: "Python", icon: "/images/icons/Python.png"},
-    {name: "SQL", icon: "bx bxl-postgresql"},
-    {name: "AWS", icon: "fab fa-aws"},
+    {name: "SQL", icon: "/images/icons/PostgresSQL.png"},
+    {name: "AWS", icon: "/images/icons/AWS.png"},
     {name: "Jenkins", icon: "/images/icons/Jenkins.png"},
-    {name: "GitHub", icon: "fab fa-github"},
+    {name: "GitHub", icon: "/images/icons/GitHub.png"},
     {name: "Jira", icon: "/images/icons/Jira.png"},
-    {name: "HTML5", icon: "fab fa-html5"},
-    {name: "CSS3", icon: "fab fa-css3-alt"},
-    {name: "JavaScript", icon: "fab fa-js"},
+    {name: "HTML5", icon: "/images/icons/HTML5.png"},
+    {name: "CSS3", icon: "/images/icons/CSS3.png"},
+    {name: "JavaScript", icon: "/images/icons/JavaScript.png"},
     {name: "Figma", icon: "/images/icons/Figma.png"},
 
+];
+
+const affordableLendingSkills = [
+    {name: "Teams", icon: "/images/icons/teams.png"},
+    {name: "PowerPoint", icon: "/images/icons/powerpoint.png"},
+    {name: "Excel", icon: "/images/icons/excel.png"},
+    {name: "Word", icon: "/images/icons/word.png"},
+    {name: "Visio", icon: "/images/icons/visio.png"},
+    {name: "OneDrive", icon: "/images/icons/onedrive.png"},
 ];
 
 // Function to create the skills section
@@ -199,6 +208,8 @@ window.onload = () => {
         createSkillsSection(biasSkills);
     } else if (window.location.pathname.includes('/pages/mbs_pooling.html')) {
         createSkillsSection(mbsPoolingSkills);
+    } else if (window.location.pathname.includes('/pages/affordable_lending.html')) {
+        createSkillsSection(affordableLendingSkills);
     } else {
         createSkillsSection(indexSkills);
     }

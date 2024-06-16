@@ -959,6 +959,11 @@ span {
         right: -43%;
     }
 
+    .skill img {
+        width: 70px;
+        height: 70px;
+    }
+
     .projects .projects-container {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -1159,6 +1164,10 @@ span {
     }
 
 
+    .skill img {
+        width: 60px;
+        height: 60px;
+    }
 
 
     .contact form .input-box input {
