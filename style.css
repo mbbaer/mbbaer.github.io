@@ -14,7 +14,7 @@
 :root {
     --bg-color: #dfe2e4;
     --text-color: black;
-    --main-color: #808a92;
+    --main-color: #828486;
     --white-color: black;
     --shadow-color: rgba(251, 247, 247, 0.2);
 }
@@ -517,11 +517,11 @@ span {
 
 .skill:hover {
     transform: scale(1.1);
-    color: #808a92; /* Change color on hover */
+    color: #828486; /* Change color on hover */
 }
 
 .skill:hover i, .skill:hover img {
-    color: #808a92; /* Change icon color on hover */
+    color: #828486; /* Change icon color on hover */
 }
 
 /* Dark mode specific styles */
@@ -530,7 +530,7 @@ span {
 }
 
 .dark-mode .skill:hover i, .dark-mode .skill:hover img {
-    color: #808a92; /* Change icon color on hover */
+    color: #828486; /* Change icon color on hover */
 }
 
 
