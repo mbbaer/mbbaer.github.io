@@ -12,7 +12,7 @@
 }
 
 :root {
-    --bg-color: #d8dbde;
+    --bg-color: #dfe2e4;
     --text-color: black;
     --main-color: #808a92;
     --white-color: black;
@@ -32,15 +32,15 @@
 
 /* Dark mode for navbar links */
 .dark-mode .header.sticky .navbar a {
-    color: #d8dbde;
+    color: #dfe2e4;
 }
 
 .dark-mode .navbar a {
-    color: #d8dbde;
+    color: #dfe2e4;
 }
 
 .dark-mode #darkMode-icon {
-    color: #d8dbde;
+    color: #dfe2e4;
 }
 
 html {
@@ -959,6 +959,11 @@ span {
         right: -43%;
     }
 
+    .skill img {
+        width: 70px;
+        height: 70px;
+    }
+
     .projects .projects-container {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -1159,6 +1164,10 @@ span {
     }
 
 
+    .skill img {
+        width: 60px;
+        height: 60px;
+    }
 
 
     .contact form .input-box input {
