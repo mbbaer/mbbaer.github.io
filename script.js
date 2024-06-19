@@ -100,8 +100,11 @@ darkModeIcon.onclick = () => {
         } else {
             logoImage.src = 'images/logo/logo_white-min.png';
         }
-    } else {
+    } else if (window.location.pathname.includes('/pages')) {
+        logoImage.src = '../images/logo/logo_black-min.png';
+    } else{
         logoImage.src = 'images/logo/logo_black-min.png';
+
     }
 };
 
