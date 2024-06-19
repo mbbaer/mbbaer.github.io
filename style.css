@@ -1092,7 +1092,6 @@ span {
     }
 
     .process-step p {
-        font-size: 1.6rem; /* Adjust paragraph size for smaller screens */
         margin-bottom: 2rem;
     }
 
@@ -1115,7 +1114,7 @@ span {
 
 @media (max-width: 450px) {
     html {
-        font-size: 50%;
+        font-size: 55%;
     }
 
     #darkMode-icon {
@@ -1146,10 +1145,19 @@ span {
         width: 90vw;
     }
 
-
+    .process h3 {
+        text-align: center;
+    }
 
     .projects .projects-container {
         grid-template-columns: 1fr;
+    }
+    .process-step h3 {
+        text-align: center;
+    }
+
+    .process-step p {
+        text-align: center;
     }
 
 
