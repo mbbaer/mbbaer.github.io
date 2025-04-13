@@ -209,7 +209,7 @@ function createSkillsSection(skills) {
 window.onload = () => {
     if (window.location.pathname.includes('/pages/bias_mitigation.html')) {
         createSkillsSection(biasSkills);
-    } else if (window.location.pathname.includes('/pages/mbs_pooling.html')) {
+    } else if (window.location.pathname.includes('/pages/multifamily_cloud.html')) {
         createSkillsSection(mbsPoolingSkills);
     } else if (window.location.pathname.includes('/pages/affordable_lending.html')) {
         createSkillsSection(affordableLendingSkills);
