@@ -125,12 +125,12 @@ ScrollReveal().reveal('.home-content h3, .home-content p, .about-content', { ori
 // Define the skills and their corresponding icons for the index page
 const indexSkills = [
     {name: "Python", icon: "/images/icons/Python.png"},
-    {name: "Java", icon: "/images/icons/Java.png"},
     {name: "SQL", icon: "/images/icons/PostgresSQL.png"},
     {name: "AWS", icon: "/images/icons/AWS.png"},
     {name: "Android", icon: "/images/icons/Android.png"},
     {name: "GitHub", icon: "/images/icons/GitHub.png"},
     {name: "Jira", icon: "/images/icons/Jira.png"},
+    {name: "Figma", icon: "/images/icons/Figma.png"},
     {name: "HTML5", icon: "/images/icons/HTML5.png"},
     {name: "CSS3", icon: "/images/icons/CSS3.png"},
     {name: "JavaScript", icon: "/images/icons/JavaScript.png"},
@@ -150,13 +150,12 @@ const mbsPoolingSkills = [
     {name: "Python", icon: "/images/icons/Python.png"},
     {name: "SQL", icon: "/images/icons/PostgresSQL.png"},
     {name: "AWS", icon: "/images/icons/AWS.png"},
-    {name: "Jenkins", icon: "/images/icons/Jenkins.png"},
-    {name: "GitHub", icon: "/images/icons/GitHub.png"},
     {name: "Jira", icon: "/images/icons/Jira.png"},
-    {name: "HTML5", icon: "/images/icons/HTML5.png"},
-    {name: "CSS3", icon: "/images/icons/CSS3.png"},
-    {name: "JavaScript", icon: "/images/icons/JavaScript.png"},
     {name: "Figma", icon: "/images/icons/Figma.png"},
+    {name: "PowerPoint", icon: "/images/icons/powerpoint.png"},
+    {name: "Excel", icon: "/images/icons/excel.png"},
+    {name: "Word", icon: "/images/icons/word.png"},
+    {name: "Visio", icon: "/images/icons/visio.png"},
 
 ];
 
