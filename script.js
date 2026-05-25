@@ -124,16 +124,14 @@ ScrollReveal().reveal('.home-content h3, .home-content p, .about-content', { ori
 
 // Define the skills and their corresponding icons for the index page
 const indexSkills = [
-    {name: "Python", icon: "/images/icons/Python.png"},
-    {name: "SQL", icon: "/images/icons/PostgresSQL.png"},
-    {name: "AWS", icon: "/images/icons/AWS.png"},
-    {name: "Android", icon: "/images/icons/Android.png"},
-    {name: "GitHub", icon: "/images/icons/GitHub.png"},
-    {name: "Jira", icon: "/images/icons/Jira.png"},
-    {name: "Figma", icon: "/images/icons/Figma.png"},
-    {name: "HTML5", icon: "/images/icons/HTML5.png"},
-    {name: "CSS3", icon: "/images/icons/CSS3.png"},
-    {name: "JavaScript", icon: "/images/icons/JavaScript.png"},
+    {name: "Python", icon: "images/icons/python.svg"},
+    {name: "Generative AI", icon: "/images/icons/openai.svg"},
+    {name: "Data & Analytics", icon: "/images/icons/sagemaker.svg"},
+    {name: "Git & Versioning", icon: "/images/icons/github-color.svg"},
+    {name: "Automation", icon: "/images/icons/automation.svg"},
+    {name: "Product Operations", icon: "/images/icons/jira.svg"},
+    {name: "Web Development", icon: "/images/icons/react.svg"},
+    {name: "Cloud Systems", icon: "/images/icons/aws.svg"},
 ];
 
 // Define the skills and their corresponding icons for the project pages
