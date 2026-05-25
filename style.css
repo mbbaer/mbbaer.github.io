@@ -12,10 +12,10 @@
 }
 
 :root {
-    --bg-color: #dfe2e4;
-    --text-color: black;
-    --main-color: #828486;
-    --white-color: black;
+    --bg-color: #ffffff;
+    --text-color: gray;
+    --main-color: #0b2b52;
+    --white-color: white;
     --shadow-color: rgba(251, 247, 247, 0.2);
 }
 
@@ -62,7 +62,7 @@ img {
     top: 0;
     left: 0;
     width: 100vw;
-    padding: 1rem 7%;
+    padding: 1.5rem 7%;
     background: transparent;
     display: flex;
     align-items: center;
@@ -178,6 +178,8 @@ section {
     font-size: 5.6rem;
     font-weight: 700;
     margin-bottom: .3rem;
+    color: var(--main-color);
+
 }
 
 .home-content p {
@@ -476,7 +478,7 @@ span {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 40px;
 }
 
 .skills-section h2 {
