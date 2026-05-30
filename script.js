@@ -21,7 +21,7 @@ function sendmail(event) {
 
     };
 
-    emailjs.send('service_su55z8m', 'template_ygl2yd9', templateVars)
+    emailjs.send('service_fhfdw4f', 'template_ict0y4i', templateVars)
         .then(function(res) {
             alert("Send successfully");
         }, function(error) {
